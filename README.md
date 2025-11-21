@@ -12,6 +12,8 @@ Cada problema está en un archivo Java separado con:
 
 ## Problemas incluidos
 
+### Lista completa de problemas:
+
 1. **2043** - Simple Bank System
 2. **3161** - Block Placement Queries
 3. **3045** - Count Prefix and Suffix Pairs II
@@ -28,6 +30,8 @@ Cada problema está en un archivo Java separado con:
 14. **54** - Spiral Matrix
 15. **68** - Text Justification
 16. **332** - Reconstruct Itinerary
+
+**Total: 16 problemas resueltos**
 
 ## Ejecución
 
