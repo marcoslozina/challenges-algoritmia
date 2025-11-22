@@ -1,6 +1,6 @@
 # Challenges Algoritmia
 
-Este repositorio contiene soluciones optimizadas en Java para 16 problemas de algoritmia de LeetCode.
+Este repositorio contiene soluciones optimizadas en Java para problemas de algoritmia de LeetCode, organizadas según un plan de estudio de 6 semanas.
 
 ## Estructura
 
@@ -31,7 +31,46 @@ Cada problema está en un archivo Java separado con:
 15. **68** - Text Justification
 16. **332** - Reconstruct Itinerary
 
-**Total: 16 problemas resueltos**
+**Total: 16 problemas resueltos (originales)**
+
+### Problemas adicionales del plan de estudio:
+
+**Semana 2: HashMap y Sets (6 problemas)**
+- 49 - Group Anagrams
+- 347 - Top K Frequent Elements
+- 36 - Valid Sudoku
+- 202 - Happy Number
+- 205 - Isomorphic Strings
+- 128 - Longest Consecutive Sequence
+
+**Semana 3: Pilas y Colas (5 problemas)**
+- 155 - Min Stack
+- 20 - Valid Parentheses
+- 739 - Daily Temperatures
+- 232 - Implement Queue using Stacks
+- 150 - Evaluate Reverse Polish Notation
+
+**Semana 4: Árboles y Recursión (5 problemas)**
+- 104 - Maximum Depth of Binary Tree
+- 226 - Invert Binary Tree
+- 543 - Diameter of Binary Tree
+- 236 - Lowest Common Ancestor
+- 101 - Symmetric Tree
+
+**Semana 5: Sorting & Sliding Window (4 problemas)**
+- 57 - Insert Interval
+- 239 - Sliding Window Maximum
+- 3 - Longest Substring Without Repeating Characters
+- 76 - Minimum Window Substring
+
+**Semana 6: Programación Dinámica (5 problemas)**
+- 70 - Climbing Stairs
+- 198 - House Robber
+- 322 - Coin Change
+- 5 - Longest Palindromic Substring
+- 53 - Maximum Subarray
+
+**Total general: 41 problemas resueltos**
 
 ## 🧠 Plan de Estudio de Algoritmia – 6 Semanas
 
