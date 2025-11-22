@@ -33,6 +33,84 @@ Cada problema está en un archivo Java separado con:
 
 **Total: 16 problemas resueltos**
 
+## 🧠 Plan de Estudio de Algoritmia – 6 Semanas
+
+### ✅ Semana 1: Arrays y Strings (básicos)
+
+**Objetivo:** Familiarizarse con manipulación de arrays, strings y operaciones básicas.
+
+| Ejercicio | Estado | Tema |
+|-----------|--------|------|
+| ContainsDuplicate | ☑️ Completado | HashSet + Arrays |
+| ReverseString | ☑️ Completado | Punteros |
+| TwoSum | ☑️ Completado | HashMap + búsqueda |
+| ValidAnagram | ☑️ Completado | HashMap / Array de chars |
+| BinarySearchNumerosPares | ☑️ Completado | Búsqueda binaria |
+| DetectarPrimerCaracterDuplicado | ☑️ Completado | HashSet + recorrido |
+| Palindromo | ☑️ Completado | Punteros + lógica |
+| ParentesisBalanceados | ☑️ Completado | Stack |
+
+### 🟧 Semana 2: HashMap y Sets
+
+**Objetivo:** Profundizar en estructuras clave para búsquedas y conteos eficientes.
+
+| Ejercicio | Estado | Tema |
+|-----------|--------|------|
+| Group Anagrams | 🟧 Pendiente | HashMap con listas |
+| Top K Frequent Elements | 🟧 Pendiente | HashMap + PriorityQueue |
+| Valid Sudoku | 🟧 Pendiente | Validación con Set |
+| Happy Number | 🟧 Pendiente | Detección de ciclos con Set |
+| Isomorphic Strings | 🟧 Pendiente | HashMap + bi-mapeo |
+| Longest Consecutive Sequence | 🟧 Pendiente | Set + optimización |
+
+### 🍀 Semana 3: Pilas y Colas
+
+**Objetivo:** Aprender uso de estructuras LIFO/FIFO para problemas secuenciales.
+
+| Ejercicio | Estado | Tema |
+|-----------|--------|------|
+| Min Stack | 🟧 Pendiente | Stack con estado |
+| Valid Parentheses | 🟧 Pendiente | Stack |
+| Daily Temperatures | 🟧 Pendiente | Stack + índices |
+| Implement Queue using Stacks | 🟧 Pendiente | Stack/Queue sim |
+| Evaluate Reverse Polish Notation | 🟧 Pendiente | Stack matemática |
+
+### 🌲 Semana 4: Árboles y Recursión
+
+**Objetivo:** Entender estructuras jerárquicas y recursividad.
+
+| Ejercicio | Estado | Tema |
+|-----------|--------|------|
+| Maximum Depth of Binary Tree | 🟧 Pendiente | DFS recursivo |
+| Invert Binary Tree | 🟧 Pendiente | Recursión |
+| Diameter of Binary Tree | 🟧 Pendiente | Recursión con estado |
+| Lowest Common Ancestor | 🟧 Pendiente | Recursión |
+| Symmetric Tree | 🟧 Pendiente | Recursión + mirror |
+
+### 🔢 Semana 5: Sorting & Sliding Window
+
+**Objetivo:** Aplicar ventanas móviles y técnicas de ordenamiento.
+
+| Ejercicio | Estado | Tema |
+|-----------|--------|------|
+| Merge Intervals | ☑️ Completado | Sorting |
+| Insert Interval | 🟧 Pendiente | Sorting + lógica |
+| Sliding Window Maximum | 🟧 Pendiente | Deque + ventana |
+| Longest Substring Without Repeat | 🟧 Pendiente | Sliding window + Set |
+| Minimum Window Substring | 🟧 Pendiente | Sliding window + Map |
+
+### 🧮 Semana 6: Programación Dinámica (DP) Básica
+
+**Objetivo:** Introducción a subproblemas y memoización/tabulación.
+
+| Ejercicio | Estado | Tema |
+|-----------|--------|------|
+| Climbing Stairs | 🟧 Pendiente | DP básico (Fibonacci) |
+| House Robber | 🟧 Pendiente | DP 1D |
+| Coin Change | 🟧 Pendiente | DP con mínimos |
+| Longest Palindromic Substring | 🟧 Pendiente | DP + strings |
+| Maximum Subarray | 🟧 Pendiente | Kadane's Algorithm |
+
 ## Ejecución
 
 ### Ejecutar un problema individual
