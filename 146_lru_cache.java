@@ -1,13 +1,19 @@
 import java.util.*;
 
 /**
- * 146 - LRU Cache
+ * LeetCode 146 - LRU Cache
  * 
  * Descripción del problema:
- * Diseñar una estructura de datos LRU (Least Recently Used) Cache que soporte:
- * - get(key): obtener el valor de la clave, o -1 si no existe
- * - put(key, value): insertar o actualizar el valor
- * Cuando se alcanza la capacidad, eliminar el elemento menos recientemente usado.
+ * Diseña e implementa una estructura de datos para un Least Recently Used (LRU) cache.
+ * 
+ * Debe soportar las siguientes operaciones:
+ * - LRUCache(int capacity): Inicializa el cache con capacidad positiva.
+ * - int get(int key): Retorna el valor de la key si existe, de lo contrario retorna -1.
+ * - void put(int key, int value): Actualiza el valor de la key si existe. Si no existe,
+ *   agrega el par key-value. Si el número de keys excede la capacidad, remueve la key
+ *   menos recientemente usada.
+ * 
+ * Ambas operaciones deben ejecutarse en O(1) tiempo.
  * 
  * Enfoque de solución:
  * Combinamos dos estructuras de datos:

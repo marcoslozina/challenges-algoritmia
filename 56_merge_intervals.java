@@ -1,12 +1,17 @@
 import java.util.*;
 
 /**
- * 56 - Merge Intervals
+ * LeetCode 56 - Merge Intervals
  * 
  * Descripción del problema:
- * Dado un array de intervalos [start, end], fusionar todos los intervalos que se
- * solapan y devolver un array de intervalos no solapados que cubre todos los
- * intervalos en la entrada.
+ * Dado un array de intervalos donde intervals[i] = [starti, endi], fusionar todos los
+ * intervalos que se solapan y retornar un array de los intervalos no solapados que
+ * cubren todos los intervalos en la entrada.
+ * 
+ * Ejemplo:
+ * Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+ * Output: [[1,6],[8,10],[15,18]]
+ * Explicación: Los intervalos [1,3] y [2,6] se solapan, se fusionan en [1,6].
  * 
  * Enfoque de solución:
  * 1. Ordenamos los intervalos por su tiempo de inicio (O(n log n))

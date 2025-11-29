@@ -1,12 +1,16 @@
 /**
- * 2043 - Simple Bank System
+ * LeetCode 2043 - Simple Bank System
  * 
  * Descripción del problema:
- * Diseña un sistema bancario simple que maneje múltiples cuentas. El sistema debe soportar:
- * - Transferir dinero de una cuenta a otra
- * - Depositar dinero en una cuenta
- * - Retirar dinero de una cuenta
- * Todas las operaciones deben validar que las cuentas existan y que haya fondos suficientes.
+ * Tienes un sistema bancario que maneja múltiples cuentas. Implementa la clase Bank:
+ * 
+ * - Bank(long[] balance): Inicializa el objeto con las cuentas desde 1 hasta n.
+ * - boolean transfer(int account1, int account2, long money): Transfiere money de account1 a account2.
+ *   Retorna true si la transacción fue exitosa, false en caso contrario.
+ * - boolean deposit(int account, long money): Deposita money en account. Retorna true si exitoso.
+ * - boolean withdraw(int account, long money): Retira money de account. Retorna true si exitoso.
+ * 
+ * Todas las operaciones deben validar que las cuentas existan (1-indexed) y que haya fondos suficientes.
  * 
  * Enfoque de solución:
  * Utilizamos un array para almacenar los balances de cada cuenta. Cada operación:
