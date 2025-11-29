@@ -1,20 +1,24 @@
 import java.util.*;
 
 /**
- * 49 - Group Anagrams
+ * LeetCode 49 - Group Anagrams
  * 
- * Descripción del problema:
- * Dado un array de strings, agrupar los anagramas juntos. Puedes devolver la respuesta
- * en cualquier orden. Un anagrama es una palabra o frase formada reordenando las letras
- * de otra palabra o frase.
+ * Problem Description:
+ * Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * typically using all the original letters exactly once.
  * 
- * Enfoque de solución:
- * Usamos un HashMap donde la clave es la representación ordenada de los caracteres:
- * 1. Para cada string, ordenamos sus caracteres para crear una clave única
- * 2. Agrupamos todos los strings que tienen la misma clave (mismos caracteres)
- * 3. Devolvemos una lista con todos los grupos
+ * Example:
+ * Input: strs = ["eat","tea","tan","ate","nat","bat"]
+ * Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
  * 
- * Alternativa: Podríamos usar un array de conteo de caracteres como clave para O(n) en lugar de O(k log k)
+ * Solution Approach:
+ * We use a HashMap where the key is the sorted representation of characters:
+ * 1. For each string, sort its characters to create a unique key
+ * 2. Group all strings that have the same key (same characters)
+ * 3. Return a list with all groups
+ * 
+ * Alternative: We could use a character count array as key for O(n) instead of O(k log k)
  * 
  * Time Complexity: O(n * k * log(k)) donde n es número de strings, k es longitud promedio
  * Space Complexity: O(n * k)
