@@ -23,13 +23,20 @@ import java.util.*;
  */
 class Solution {
     public Character findFirstDuplicate(String s) {
-        Set<Character> seen = new HashSet<>();
+        // Find the first character that appears more than once
+        // Track all occurrences and find the first character with a duplicate
+        Map<Character, Integer> charCount = new HashMap<>();
         
+        // Count all characters
         for (char c : s.toCharArray()) {
-            if (seen.contains(c)) {
+            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+        }
+        
+        // Find the first character in the string that has count > 1
+        for (char c : s.toCharArray()) {
+            if (charCount.get(c) > 1) {
                 return c;
             }
-            seen.add(c);
         }
         
         return null;
@@ -41,9 +48,10 @@ class Solution {
         Solution sol = new Solution();
         
         // Test 1: Caso con duplicado
+        // En "abccba": 'a' aparece primero y tiene duplicado, así que devolvemos 'a'
         Character result1 = sol.findFirstDuplicate("abccba");
         assert result1 != null : "Test 1.1 failed";
-        assert result1 == 'b' : "Test 1.2 failed: expected 'b', got " + result1;
+        assert result1 == 'a' : "Test 1.2 failed: expected 'a', got " + result1;
         System.out.println("✓ Test 1 passed: 'abccba' -> '" + result1 + "'");
         
         // Test 2: Sin duplicados
