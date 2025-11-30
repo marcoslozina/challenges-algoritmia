@@ -6,7 +6,7 @@ echo "=== Compiling and running all tests ==="
 echo ""
 
 # Find all Java files in week directories and additional problems
-directories=("semana_2" "semana_3" "semana_4" "semana_5" "semana_6" "problemas_adicionales")
+directories=("semana_1" "semana_2" "semana_3" "semana_4" "semana_5" "semana_6" "problemas_adicionales")
 
 total_tests=0
 passed_tests=0

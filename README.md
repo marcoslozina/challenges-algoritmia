@@ -28,14 +28,14 @@ Each problem file includes:
 
 | Problem | Status | Topic | File |
 |---------|--------|-------|------|
-| ContainsDuplicate | ✅ Completed | HashSet + Arrays | - |
-| ReverseString | ✅ Completed | Two Pointers | - |
-| TwoSum | ✅ Completed | HashMap + Search | - |
-| ValidAnagram | ✅ Completed | HashMap / Char Array | - |
-| BinarySearchNumerosPares | ✅ Completed | Binary Search | - |
-| DetectarPrimerCaracterDuplicado | ✅ Completed | HashSet + Traversal | - |
-| Palindromo | ✅ Completed | Two Pointers + Logic | - |
-| ParentesisBalanceados | ✅ Completed | Stack | - |
+| [217 - Contains Duplicate](semana_1/217_contains_duplicate.java) | ✅ Completed | HashSet + Arrays | `semana_1/217_contains_duplicate.java` |
+| [344 - Reverse String](semana_1/344_reverse_string.java) | ✅ Completed | Two Pointers | `semana_1/344_reverse_string.java` |
+| [1 - Two Sum](semana_1/1_two_sum.java) | ✅ Completed | HashMap + Search | `semana_1/1_two_sum.java` |
+| [242 - Valid Anagram](semana_1/242_valid_anagram.java) | ✅ Completed | HashMap / Char Array | `semana_1/242_valid_anagram.java` |
+| [Binary Search - Números Pares](semana_1/binary_search_numeros_pares.java) | ✅ Completed | Binary Search | `semana_1/binary_search_numeros_pares.java` |
+| [Detectar Primer Caracter Duplicado](semana_1/detectar_primer_caracter_duplicado.java) | ✅ Completed | HashSet + Traversal | `semana_1/detectar_primer_caracter_duplicado.java` |
+| [125 - Valid Palindrome](semana_1/125_valid_palindrome.java) | ✅ Completed | Two Pointers + Logic | `semana_1/125_valid_palindrome.java` |
+| [20 - Valid Parentheses](semana_1/20_valid_parentheses.java) | ✅ Completed | Stack | `semana_1/20_valid_parentheses.java` |
 
 ### ✅ Week 2: HashMap and Sets
 **Objective:** Deepen understanding of key structures for efficient searches and counting.
@@ -113,7 +113,7 @@ Each problem file includes:
 | [68 - Text Justification](problemas_adicionales/68_text_justification.java) | ✅ Completed | String Formatting | `problemas_adicionales/68_text_justification.java` |
 | [332 - Reconstruct Itinerary](problemas_adicionales/332_reconstruct_itinerary.java) | ✅ Completed | Graph DFS | `problemas_adicionales/332_reconstruct_itinerary.java` |
 
-**Total: 41 problems solved**
+**Total: 49 problems solved**
 
 ## 🚀 Execution
 
