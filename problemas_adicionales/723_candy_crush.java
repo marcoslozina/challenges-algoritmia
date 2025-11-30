@@ -1,20 +1,31 @@
 import java.util.*;
 
 /**
- * 723 - Candy Crush
+ * LeetCode 723 - Candy Crush
  * 
- * Descripción del problema:
- * Dado un tablero de Candy Crush, eliminar grupos de 3 o más dulces del mismo color
- * (horizontal o vertical). Después de eliminar, los dulces caen por gravedad.
- * Repetir hasta que no haya más grupos para eliminar.
+ * Problem Description:
+ * This question is about implementing a basic elimination algorithm for Candy Crush.
  * 
- * Enfoque de solución:
- * 1. Iteramos hasta que no encontremos más grupos para eliminar:
- *    a. Marcamos celdas a eliminar (usando valores negativos)
- *    b. Buscamos grupos horizontales de 3+ celdas iguales
- *    c. Buscamos grupos verticales de 3+ celdas iguales
- * 2. Aplicamos gravedad: movemos dulces hacia abajo, llenando espacios vacíos
- * 3. Repetimos hasta que no haya más cambios
+ * Given a 2D integer array board representing the grid of candy, different positive integers
+ * board[i][j] represent different types of candies. A value of board[i][j] = 0 represents
+ * that the cell at position (i, j) is empty. The given board represents the state of the
+ * game following the player's move.
+ * 
+ * Now, you need to crush the candies according to the following rules:
+ * - If three or more candies of the same type are adjacent vertically or horizontally,
+ *   crush them all at the same time - these positions become empty.
+ * - After crushing, if an empty space on the board has candies on top of itself, then
+ *   these candies will drop until they hit a candy or bottom at the same time.
+ * - After the above steps, there may be more candies that can be crushed. If so, repeat.
+ * - If there are no more candies that can be crushed, return the current board.
+ * 
+ * Solution Approach:
+ * 1. Iterate until no more groups to eliminate:
+ *    a. Mark cells to eliminate (using negative values)
+ *    b. Find horizontal groups of 3+ equal cells
+ *    c. Find vertical groups of 3+ equal cells
+ * 2. Apply gravity: move candies down, filling empty spaces
+ * 3. Repeat until no more changes
  * 
  * Time Complexity: O((m * n)^2) in worst case, but typically much better
  * Space Complexity: O(m * n)

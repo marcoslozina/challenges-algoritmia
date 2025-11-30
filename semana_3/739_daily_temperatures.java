@@ -1,23 +1,27 @@
 import java.util.*;
 
 /**
- * 739 - Daily Temperatures
+ * LeetCode 739 - Daily Temperatures
  * 
- * Descripción del problema:
- * Dado un array de temperaturas diarias, devolver un array donde answer[i] es el número
- * de días que tienes que esperar después del día i para obtener una temperatura más alta.
- * Si no hay un día futuro con temperatura más alta, answer[i] = 0.
+ * Problem Description:
+ * Given an array of integers temperatures represents the daily temperatures, return an array
+ * answer such that answer[i] is the number of days you have to wait after the ith day to get
+ * a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0.
  * 
- * Enfoque de solución:
- * Usamos un Stack monótono decreciente:
- * 1. Mantenemos un stack con índices de días
- * 2. Para cada día, mientras la temperatura actual sea mayor que la del tope del stack:
- *    - Calculamos la diferencia de días (índice actual - índice del tope)
- *    - Actualizamos answer[índice del tope] con la diferencia
- *    - Removemos el índice del stack
- * 3. Agregamos el índice actual al stack
+ * Example:
+ * Input: temperatures = [73,74,75,71,69,72,76,73]
+ * Output: [1,1,4,2,1,1,0,0]
  * 
- * Time Complexity: O(n) - cada índice se agrega y remueve máximo una vez
+ * Solution Approach:
+ * We use a monotonic decreasing stack:
+ * 1. Maintain a stack with day indices
+ * 2. For each day, while current temperature is greater than stack top:
+ *    - Calculate day difference (current index - stack top index)
+ *    - Update answer[stack top index] with the difference
+ *    - Remove index from stack
+ * 3. Add current index to stack
+ * 
+ * Time Complexity: O(n) - each index is added and removed at most once
  * Space Complexity: O(n)
  */
 class Solution {

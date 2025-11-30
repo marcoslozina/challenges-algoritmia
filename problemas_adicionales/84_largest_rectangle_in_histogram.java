@@ -1,22 +1,27 @@
 import java.util.*;
 
 /**
- * 84 - Largest Rectangle in Histogram
+ * LeetCode 84 - Largest Rectangle in Histogram
  * 
- * Descripción del problema:
- * Dado un array de alturas que representa un histograma, encontrar el área del
- * rectángulo más grande que se puede formar dentro del histograma.
+ * Problem Description:
+ * Given an array of integers heights representing the histogram's bar height where the
+ * width of each bar is 1, return the area of the largest rectangle in the histogram.
  * 
- * Enfoque de solución:
- * Usamos una pila monótona para mantener índices de barras en orden creciente:
- * 1. Para cada barra, mientras la barra actual sea menor que la del tope de la pila:
- *    a. Calculamos el área del rectángulo formado por la barra del tope
- *    b. El ancho se extiende desde el índice anterior en la pila hasta el actual
- * 2. Agregamos un 0 al final para procesar todas las barras restantes
- * 3. Mantenemos el área máxima encontrada
+ * Example:
+ * Input: heights = [2,1,5,6,2,3]
+ * Output: 10
+ * Explanation: The largest rectangle is formed by bars with heights [5,6], area = 5*2 = 10
  * 
- * La clave es que cuando encontramos una barra más baja, sabemos que las barras
- * más altas en la pila no pueden extenderse más a la derecha.
+ * Solution Approach:
+ * We use a monotonic stack to maintain bar indices in increasing order:
+ * 1. For each bar, while current bar is smaller than stack top:
+ *    a. Calculate area of rectangle formed by stack top bar
+ *    b. Width extends from previous index in stack to current index
+ * 2. Add a 0 at the end to process all remaining bars
+ * 3. Maintain the maximum area found
+ * 
+ * Key insight: When we find a lower bar, we know that higher bars in the stack
+ * cannot extend further to the right.
  * 
  * Time Complexity: O(n) where n is the number of bars
  * Space Complexity: O(n)

@@ -1,20 +1,26 @@
 /**
- * 236 - Lowest Common Ancestor of a Binary Tree
+ * LeetCode 236 - Lowest Common Ancestor of a Binary Tree
  * 
- * Descripción del problema:
- * Dada la raíz de un árbol binario y dos nodos p y q, encontrar el ancestro común más bajo (LCA).
- * El LCA es el nodo más profundo que tiene tanto p como q como descendientes.
+ * Problem Description:
+ * Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+ * The lowest common ancestor is defined between two nodes p and q as the lowest node in T
+ * that has both p and q as descendants (where we allow a node to be a descendant of itself).
  * 
- * Enfoque de solución:
- * Usamos recursión:
- * 1. Si el nodo actual es null, p o q, retornamos el nodo
- * 2. Buscamos recursivamente en los subárboles izquierdo y derecho
- * 3. Si ambos subárboles retornan un nodo no-null, el nodo actual es el LCA
- * 4. Si solo uno retorna no-null, ese es el LCA (o un ancestro de p/q)
- * 5. Si ambos retornan null, no hay LCA en este subárbol
+ * Example:
+ * Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+ * Output: 3
+ * Explanation: The LCA of nodes 5 and 1 is 3.
  * 
- * Time Complexity: O(n) donde n es el número de nodos
- * Space Complexity: O(h) donde h es la altura del árbol
+ * Solution Approach:
+ * We use recursion:
+ * 1. If current node is null, p, or q, return the node
+ * 2. Recursively search in left and right subtrees
+ * 3. If both subtrees return non-null nodes, current node is the LCA
+ * 4. If only one returns non-null, that is the LCA (or an ancestor of p/q)
+ * 5. If both return null, there's no LCA in this subtree
+ * 
+ * Time Complexity: O(n) where n is the number of nodes
+ * Space Complexity: O(h) where h is the height of the tree
  */
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

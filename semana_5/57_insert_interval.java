@@ -1,21 +1,30 @@
 import java.util.*;
 
 /**
- * 57 - Insert Interval
+ * LeetCode 57 - Insert Interval
  * 
- * Descripción del problema:
- * Dado un array de intervalos no solapados ordenados por inicio, y un nuevo intervalo,
- * insertar y fusionar el nuevo intervalo en el array manteniendo el orden y sin solapamientos.
+ * Problem Description:
+ * You are given an array of non-overlapping intervals intervals where intervals[i] = [starti, endi]
+ * represent the start and the end of the ith interval and intervals is sorted in ascending order
+ * by starti. You are also given an interval newInterval = [start, end] that represents the start
+ * and end of another interval.
  * 
- * Enfoque de solución:
- * 1. Agregamos todos los intervalos que terminan antes del nuevo intervalo
- * 2. Fusionamos todos los intervalos que se solapan con el nuevo intervalo:
- *    - Actualizamos el inicio al mínimo
- *    - Actualizamos el fin al máximo
- * 3. Agregamos el intervalo fusionado
- * 4. Agregamos los intervalos restantes que no se solapan
+ * Insert newInterval into intervals such that intervals is still sorted in ascending order by starti
+ * and intervals still does not have any overlapping intervals (merge overlapping intervals if necessary).
  * 
- * Time Complexity: O(n) donde n es el número de intervalos
+ * Example:
+ * Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
+ * Output: [[1,5],[6,9]]
+ * 
+ * Solution Approach:
+ * 1. Add all intervals that end before the new interval
+ * 2. Merge all intervals that overlap with the new interval:
+ *    - Update start to minimum
+ *    - Update end to maximum
+ * 3. Add the merged interval
+ * 4. Add remaining intervals that don't overlap
+ * 
+ * Time Complexity: O(n) where n is the number of intervals
  * Space Complexity: O(n)
  */
 class Solution {

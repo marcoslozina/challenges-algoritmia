@@ -1,17 +1,24 @@
 /**
- * 3034 - Number of Subarrays That Match a Pattern I
+ * LeetCode 3034 - Number of Subarrays That Match a Pattern I
  * 
- * Descripción del problema:
- * Dado un array de números y un patrón de comparaciones (-1, 0, 1), contar cuántos
- * subarrays de longitud pattern.length + 1 coinciden con el patrón.
- * El patrón representa: -1 (decrece), 0 (igual), 1 (incrementa)
+ * Problem Description:
+ * You are given a 0-indexed integer array nums of length n, and a 0-indexed integer
+ * array pattern of length m consisting of integers -1, 0, and 1.
  * 
- * Enfoque de solución:
- * Para cada posible inicio de subarray:
- * 1. Extraemos un subarray de longitud pattern.length + 1
- * 2. Comparamos cada par consecutivo en el subarray con el patrón correspondiente
- * 3. Convertimos la relación entre números consecutivos a -1, 0, o 1
- * 4. Si todas las comparaciones coinciden, incrementamos el contador
+ * A subarray nums[i..j] of length m + 1 is said to match the pattern if the following
+ * conditions hold for each element pattern[k]:
+ * - nums[i + k + 1] > nums[i + k] if pattern[k] == 1
+ * - nums[i + k + 1] == nums[i + k] if pattern[k] == 0
+ * - nums[i + k + 1] < nums[i + k] if pattern[k] == -1
+ * 
+ * Return the count of subarrays in nums that match the pattern.
+ * 
+ * Solution Approach:
+ * For each possible subarray start:
+ * 1. Extract a subarray of length pattern.length + 1
+ * 2. Compare each consecutive pair in subarray with corresponding pattern
+ * 3. Convert relationship between consecutive numbers to -1, 0, or 1
+ * 4. If all comparisons match, increment counter
  * 
  * Time Complexity: O(n * m) where n is array length, m is pattern length
  * Space Complexity: O(1)

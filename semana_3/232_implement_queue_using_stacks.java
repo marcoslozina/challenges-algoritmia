@@ -1,22 +1,22 @@
 import java.util.*;
 
 /**
- * 232 - Implement Queue using Stacks
+ * LeetCode 232 - Implement Queue using Stacks
  * 
- * Descripción del problema:
- * Implementar una cola (FIFO) usando solo dos stacks. La cola debe soportar:
- * push(x), pop(), peek(), y empty().
+ * Problem Description:
+ * Implement a first in first out (FIFO) queue using only two stacks. The implemented queue
+ * should support all the functions of a normal queue (push, peek, pop, and empty).
  * 
- * Enfoque de solución:
- * Usamos dos stacks (input y output):
- * 1. push: agregamos al stack de input
- * 2. pop/peek: si output está vacío, transferimos todos los elementos de input a output
- *    (esto invierte el orden, haciendo que el primero en entrar sea el primero en salir)
- * 3. pop: removemos del stack de output
- * 4. peek: retornamos el tope del stack de output
- * 5. empty: ambos stacks deben estar vacíos
+ * Solution Approach:
+ * We use two stacks (input and output):
+ * 1. push: add to input stack
+ * 2. pop/peek: if output is empty, transfer all elements from input to output
+ *    (this reverses the order, making first in become first out)
+ * 3. pop: remove from output stack
+ * 4. peek: return top of output stack
+ * 5. empty: both stacks must be empty
  * 
- * Time Complexity: O(1) amortizado para todas las operaciones
+ * Time Complexity: O(1) amortized for all operations
  * Space Complexity: O(n)
  */
 class MyQueue {

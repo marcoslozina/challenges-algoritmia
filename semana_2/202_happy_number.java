@@ -1,21 +1,24 @@
 import java.util.*;
 
 /**
- * 202 - Happy Number
+ * LeetCode 202 - Happy Number
  * 
- * Descripción del problema:
- * Un número feliz es un número que eventualmente llega a 1 cuando reemplazamos el número
- * por la suma de los cuadrados de sus dígitos. Si entra en un ciclo, no es feliz.
+ * Problem Description:
+ * Write an algorithm to determine if a number n is happy.
+ * A happy number is a number defined by the following process:
+ * - Starting with any positive integer, replace the number by the sum of the squares of its digits
+ * - Repeat the process until the number equals 1 (where it will stay), or it loops endlessly
+ * - Those numbers for which this process ends in 1 are happy
  * 
- * Enfoque de solución:
- * Usamos un Set para detectar ciclos:
- * 1. Calculamos la suma de cuadrados de dígitos
- * 2. Si llegamos a 1, retornamos true
- * 3. Si encontramos un número que ya vimos, hay ciclo -> retornamos false
- * 4. Agregamos el número actual al set y continuamos
+ * Solution Approach:
+ * We use a Set to detect cycles:
+ * 1. Calculate the sum of squares of digits
+ * 2. If we reach 1, return true
+ * 3. If we find a number we've seen before, there's a cycle -> return false
+ * 4. Add the current number to the set and continue
  * 
- * Time Complexity: O(log n) - número de iteraciones hasta ciclo o 1
- * Space Complexity: O(log n) - números únicos en el ciclo
+ * Time Complexity: O(log n) - number of iterations until cycle or 1
+ * Space Complexity: O(log n) - unique numbers in the cycle
  */
 class Solution {
     public boolean isHappy(int n) {

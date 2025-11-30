@@ -1,22 +1,28 @@
 import java.util.*;
 
 /**
- * 205 - Isomorphic Strings
+ * LeetCode 205 - Isomorphic Strings
  * 
- * Descripción del problema:
- * Dos strings s y t son isomórficos si los caracteres en s pueden ser reemplazados para obtener t.
- * Todos los caracteres deben ser mapeados a otros caracteres preservando el orden.
- * Dos caracteres no pueden mapear al mismo carácter, pero un carácter puede mapearse a sí mismo.
+ * Problem Description:
+ * Given two strings s and t, determine if they are isomorphic.
+ * Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+ * All occurrences of a character must be replaced with another character while preserving
+ * the order of characters. No two characters may map to the same character, but a character
+ * may map to itself.
  * 
- * Enfoque de solución:
- * Usamos dos HashMaps para mapeo bidireccional:
- * 1. s -> t: mapea cada carácter de s a su correspondiente en t
- * 2. t -> s: mapea cada carácter de t a su correspondiente en s
- * 3. Para cada par de caracteres, verificamos que el mapeo sea consistente
- * 4. Si encontramos conflicto, retornamos false
+ * Example:
+ * Input: s = "egg", t = "add"
+ * Output: true
  * 
- * Time Complexity: O(n) donde n es la longitud de los strings
- * Space Complexity: O(1) - máximo 256 caracteres ASCII
+ * Solution Approach:
+ * We use two HashMaps for bidirectional mapping:
+ * 1. s -> t: maps each character in s to its corresponding character in t
+ * 2. t -> s: maps each character in t to its corresponding character in s
+ * 3. For each character pair, verify the mapping is consistent
+ * 4. If we find a conflict, return false
+ * 
+ * Time Complexity: O(n) where n is the length of the strings
+ * Space Complexity: O(1) - maximum 256 ASCII characters
  */
 class Solution {
     public boolean isIsomorphic(String s, String t) {

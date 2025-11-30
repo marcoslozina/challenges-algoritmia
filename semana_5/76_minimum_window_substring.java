@@ -1,20 +1,26 @@
 import java.util.*;
 
 /**
- * 76 - Minimum Window Substring
+ * LeetCode 76 - Minimum Window Substring
  * 
- * Descripción del problema:
- * Dados dos strings s y t, encontrar la ventana mínima en s que contenga todos los
- * caracteres de t (incluyendo duplicados). Si no existe, retornar string vacío.
+ * Problem Description:
+ * Given two strings s and t of lengths m and n respectively, return the minimum window substring
+ * of s such that every character in t (including duplicates) is included in the window.
+ * If there is no such substring, return the empty string "".
  * 
- * Enfoque de solución:
- * Usamos Sliding Window con dos punteros:
- * 1. Contamos la frecuencia de caracteres en t
- * 2. Expandimos la ventana moviendo right hasta tener todos los caracteres necesarios
- * 3. Cuando tenemos todos los caracteres, contraemos la ventana moviendo left:
- *    - Actualizamos el mínimo si encontramos una ventana más pequeña
- *    - Removemos caracteres del inicio hasta que ya no tengamos todos los caracteres
- * 4. Repetimos hasta recorrer todo el string
+ * Example:
+ * Input: s = "ADOBECODEBANC", t = "ABC"
+ * Output: "BANC"
+ * Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+ * 
+ * Solution Approach:
+ * We use Sliding Window with two pointers:
+ * 1. Count frequency of characters in t
+ * 2. Expand window by moving right until we have all required characters
+ * 3. When we have all characters, contract window by moving left:
+ *    - Update minimum if we find a smaller window
+ *    - Remove characters from start until we no longer have all characters
+ * 4. Repeat until we traverse the entire string
  * 
  * Time Complexity: O(|s| + |t|)
  * Space Complexity: O(|s| + |t|)

@@ -1,18 +1,28 @@
 import java.util.*;
 
 /**
- * 2768 - Number of Black Blocks
+ * LeetCode 2768 - Number of Black Blocks
  * 
- * Descripción del problema:
- * Dada una cuadrícula de m x n y una lista de coordenadas de celdas negras,
- * contar cuántos bloques 2x2 tienen exactamente 0, 1, 2, 3, o 4 celdas negras.
+ * Problem Description:
+ * You are given two integers m and n representing the dimensions of a floor plan of a
+ * room. The floor plan is an m x n grid where each cell is either black (1) or white (0).
  * 
- * Enfoque de solución:
- * 1. Para cada celda negra, identificamos a qué bloques 2x2 pertenece
- *    (una celda puede ser parte de hasta 4 bloques diferentes)
- * 2. Usamos un HashMap para contar cuántas celdas negras tiene cada bloque 2x2
- * 3. Agrupamos los bloques por número de celdas negras (0-4)
- * 4. El número de bloques con 0 celdas negras = total bloques - bloques con celdas negras
+ * You are also given an array coordinates where coordinates[i] = [x, y] represents a
+ * black cell with coordinates (x, y) from the top-left cell (which has coordinates [0, 0]).
+ * 
+ * Every day, an infinite number of blocks are placed on the floor. Each block has size
+ * 2 x 2 and covers exactly 4 cells of the floor. Blocks can only be placed on white cells,
+ * and blocks cannot overlap.
+ * 
+ * Return an array result of length 5 where result[j] is the number of ways to place j blocks
+ * on the floor such that no two blocks overlap and no block covers any black cell.
+ * 
+ * Solution Approach:
+ * 1. For each black cell, identify which 2x2 blocks it belongs to
+ *    (a cell can be part of up to 4 different blocks)
+ * 2. Use a HashMap to count how many black cells each 2x2 block has
+ * 3. Group blocks by number of black cells (0-4)
+ * 4. Number of blocks with 0 black cells = total blocks - blocks with black cells
  * 
  * Time Complexity: O(m + n) where m is number of coordinates, n is grid size
  * Space Complexity: O(m)

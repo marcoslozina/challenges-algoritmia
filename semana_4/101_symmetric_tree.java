@@ -1,21 +1,25 @@
 /**
- * 101 - Symmetric Tree
+ * LeetCode 101 - Symmetric Tree
  * 
- * Descripción del problema:
- * Dada la raíz de un árbol binario, verificar si es simétrico alrededor de su centro.
- * Un árbol es simétrico si el subárbol izquierdo es un espejo del subárbol derecho.
+ * Problem Description:
+ * Given the root of a binary tree, check whether it is a mirror of itself
+ * (i.e., symmetric around its center).
  * 
- * Enfoque de solución:
- * Usamos recursión con dos nodos:
- * 1. Comparamos el árbol con sí mismo usando una función helper que toma dos nodos
- * 2. Dos nodos son simétricos si:
- *    - Ambos son null, o
- *    - Tienen el mismo valor, y
- *    - El izquierdo del primero es simétrico al derecho del segundo, y
- *    - El derecho del primero es simétrico al izquierdo del segundo
+ * Example:
+ * Input: root = [1,2,2,3,4,4,3]
+ * Output: true
  * 
- * Time Complexity: O(n) donde n es el número de nodos
- * Space Complexity: O(h) donde h es la altura del árbol
+ * Solution Approach:
+ * We use recursion with two nodes:
+ * 1. Compare the tree with itself using a helper function that takes two nodes
+ * 2. Two nodes are symmetric if:
+ *    - Both are null, or
+ *    - They have the same value, and
+ *    - Left of first is symmetric to right of second, and
+ *    - Right of first is symmetric to left of second
+ * 
+ * Time Complexity: O(n) where n is the number of nodes
+ * Space Complexity: O(h) where h is the height of the tree
  */
 class Solution {
     public boolean isSymmetric(TreeNode root) {

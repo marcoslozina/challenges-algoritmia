@@ -1,20 +1,28 @@
 /**
- * 1861 - Rotating the Box
+ * LeetCode 1861 - Rotating the Box
  * 
- * Descripción del problema:
- * Dada una caja con piedras (#), obstáculos (*) y espacios vacíos (.), rotar la
- * caja 90 grados en sentido horario y aplicar gravedad (las piedras caen hacia abajo
- * hasta encontrar un obstáculo o el fondo).
+ * Problem Description:
+ * You are given an m x n matrix of characters box representing a side-view of a box.
+ * Each cell of the box is one of the following:
+ * - A stone '#'
+ * - A stationary obstacle '*'
+ * - Empty '.'
  * 
- * Enfoque de solución:
- * 1. Primero aplicamos gravedad a cada fila (de derecha a izquierda):
- *    - Procesamos de derecha a izquierda para saber dónde colocar cada piedra
- *    - Mantenemos un puntero 'writePos' que indica dónde colocar la próxima piedra
- *    - Cuando encontramos un obstáculo, reiniciamos writePos
- *    - Las piedras se mueven a writePos y decrementamos writePos
- * 2. Luego rotamos 90 grados en sentido horario:
- *    - La fila i se convierte en la columna (m-1-i) del resultado
- *    - El elemento en (i, j) va a (j, m-1-i)
+ * The box is rotated 90 degrees clockwise, causing the stone to fall due to gravity.
+ * Each stone falls down until it lands on an obstacle, another stone, or the bottom
+ * of the box. Gravity does not affect the obstacles' positions.
+ * 
+ * Return an n x m matrix representing the box after the rotation described above.
+ * 
+ * Solution Approach:
+ * 1. First apply gravity to each row (from right to left):
+ *    - Process from right to left to know where to place each stone
+ *    - Maintain a 'writePos' pointer indicating where to place next stone
+ *    - When we find an obstacle, reset writePos
+ *    - Stones move to writePos and we decrement writePos
+ * 2. Then rotate 90 degrees clockwise:
+ *    - Row i becomes column (m-1-i) of result
+ *    - Element at (i, j) goes to (j, m-1-i)
  * 
  * Time Complexity: O(m * n) where m and n are dimensions
  * Space Complexity: O(m * n)

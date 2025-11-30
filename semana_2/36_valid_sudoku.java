@@ -1,23 +1,23 @@
 import java.util.*;
 
 /**
- * 36 - Valid Sudoku
+ * LeetCode 36 - Valid Sudoku
  * 
- * Descripción del problema:
- * Determinar si un tablero de Sudoku 9x9 es válido. Solo las celdas llenas necesitan
- * ser validadas según las siguientes reglas:
- * - Cada fila debe contener dígitos 1-9 sin repetición
- * - Cada columna debe contener dígitos 1-9 sin repetición
- * - Cada uno de los 9 sub-cuadros 3x3 debe contener dígitos 1-9 sin repetición
+ * Problem Description:
+ * Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated
+ * according to the following rules:
+ * - Each row must contain the digits 1-9 without repetition
+ * - Each column must contain the digits 1-9 without repetition
+ * - Each of the nine 3 x 3 sub-boxes must contain the digits 1-9 without repetition
  * 
- * Enfoque de solución:
- * Usamos Sets para rastrear dígitos vistos en filas, columnas y sub-cuadros:
- * 1. Para cada celda con valor, verificamos si ya existe en su fila, columna o sub-cuadro
- * 2. Usamos strings únicos como claves: "row-i-num", "col-j-num", "box-boxId-num"
- * 3. Si encontramos duplicado, retornamos false
+ * Solution Approach:
+ * We use Sets to track seen digits in rows, columns, and sub-boxes:
+ * 1. For each cell with a value, check if it already exists in its row, column, or sub-box
+ * 2. Use unique strings as keys: "row-i-num", "col-j-num", "box-boxId-num"
+ * 3. If we find a duplicate, return false
  * 
- * Time Complexity: O(1) - siempre 81 celdas
- * Space Complexity: O(1) - máximo 81*3 entradas
+ * Time Complexity: O(1) - always 81 cells
+ * Space Complexity: O(1) - maximum 81*3 entries
  */
 class Solution {
     public boolean isValidSudoku(char[][] board) {

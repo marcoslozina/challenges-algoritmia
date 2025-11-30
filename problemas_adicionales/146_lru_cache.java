@@ -3,30 +3,30 @@ import java.util.*;
 /**
  * LeetCode 146 - LRU Cache
  * 
- * Descripción del problema:
- * Diseña e implementa una estructura de datos para un Least Recently Used (LRU) cache.
+ * Problem Description:
+ * Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
  * 
- * Debe soportar las siguientes operaciones:
- * - LRUCache(int capacity): Inicializa el cache con capacidad positiva.
- * - int get(int key): Retorna el valor de la key si existe, de lo contrario retorna -1.
- * - void put(int key, int value): Actualiza el valor de la key si existe. Si no existe,
- *   agrega el par key-value. Si el número de keys excede la capacidad, remueve la key
- *   menos recientemente usada.
+ * Implement the LRUCache class:
+ * - LRUCache(int capacity): Initialize the LRU cache with positive size capacity.
+ * - int get(int key): Return the value of the key if the key exists, otherwise return -1.
+ * - void put(int key, int value): Update the value of the key if the key exists. Otherwise,
+ *   add the key-value pair to the cache. If the number of keys exceeds the capacity from
+ *   this operation, evict the least recently used key.
  * 
- * Ambas operaciones deben ejecutarse en O(1) tiempo.
+ * The functions get and put must each run in O(1) average time complexity.
  * 
- * Enfoque de solución:
- * Combinamos dos estructuras de datos:
- * 1. HashMap: para acceso O(1) a los nodos por clave
- * 2. Lista doblemente enlazada: para mantener el orden de uso (O(1) inserción/eliminación)
+ * Solution Approach:
+ * We combine two data structures:
+ * 1. HashMap: for O(1) access to nodes by key
+ * 2. Doubly linked list: to maintain usage order (O(1) insertion/deletion)
  * 
- * Operaciones:
- * - get: buscamos en HashMap O(1), movemos nodo al frente de la lista O(1)
- * - put: si existe, actualizamos y movemos al frente O(1)
- *        si no existe, creamos nodo, agregamos al frente O(1)
- *        si excede capacidad, eliminamos el último nodo O(1)
+ * Operations:
+ * - get: search in HashMap O(1), move node to front of list O(1)
+ * - put: if exists, update and move to front O(1)
+ *        if not exists, create node, add to front O(1)
+ *        if exceeds capacity, remove last node O(1)
  * 
- * El nodo más reciente está al inicio (head.next) y el menos reciente al final (tail.prev).
+ * Most recent node is at the start (head.next) and least recent at the end (tail.prev).
  * 
  * Time Complexity: O(1) for get and put operations
  * Space Complexity: O(capacity)

@@ -1,20 +1,24 @@
 /**
- * 226 - Invert Binary Tree
+ * LeetCode 226 - Invert Binary Tree
  * 
- * Descripción del problema:
- * Dada la raíz de un árbol binario, invertir el árbol y retornar su raíz.
- * Invertir significa intercambiar los hijos izquierdo y derecho de cada nodo.
+ * Problem Description:
+ * Given the root of a binary tree, invert the tree, and return its root.
+ * Inverting means swapping the left and right children of each node.
  * 
- * Enfoque de solución:
- * Usamos recursión:
- * 1. Caso base: si el nodo es null, retornamos null
- * 2. Intercambiamos los hijos izquierdo y derecho
- * 3. Recursivamente invertimos el subárbol izquierdo
- * 4. Recursivamente invertimos el subárbol derecho
- * 5. Retornamos el nodo actual
+ * Example:
+ * Input: root = [4,2,7,1,3,6,9]
+ * Output: [4,7,2,9,6,3,1]
  * 
- * Time Complexity: O(n) donde n es el número de nodos
- * Space Complexity: O(h) donde h es la altura del árbol
+ * Solution Approach:
+ * We use recursion:
+ * 1. Base case: if node is null, return null
+ * 2. Swap left and right children
+ * 3. Recursively invert the left subtree
+ * 4. Recursively invert the right subtree
+ * 5. Return the current node
+ * 
+ * Time Complexity: O(n) where n is the number of nodes
+ * Space Complexity: O(h) where h is the height of the tree
  */
 class Solution {
     public TreeNode invertTree(TreeNode root) {

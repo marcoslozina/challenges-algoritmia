@@ -1,21 +1,28 @@
 import java.util.*;
 
 /**
- * 239 - Sliding Window Maximum
+ * LeetCode 239 - Sliding Window Maximum
  * 
- * Descripción del problema:
- * Dado un array de enteros y un entero k, encontrar el máximo en cada ventana deslizante
- * de tamaño k.
+ * Problem Description:
+ * You are given an array of integers nums, there is a sliding window of size k which is moving
+ * from the very left of the array to the very right. You can only see the k numbers in the window.
+ * Each time the sliding window moves right by one position.
  * 
- * Enfoque de solución:
- * Usamos un Deque (double-ended queue) para mantener índices:
- * 1. El deque mantiene índices en orden decreciente de valores
- * 2. Removemos índices fuera de la ventana actual
- * 3. Removemos índices con valores menores que el actual (no pueden ser máximos)
- * 4. Agregamos el índice actual al deque
- * 5. El máximo de la ventana es el valor en el índice del frente del deque
+ * Return the max sliding window.
  * 
- * Time Complexity: O(n) - cada índice se agrega y remueve máximo una vez
+ * Example:
+ * Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+ * Output: [3,3,5,5,6,7]
+ * 
+ * Solution Approach:
+ * We use a Deque (double-ended queue) to maintain indices:
+ * 1. The deque maintains indices in decreasing order of values
+ * 2. Remove indices outside the current window
+ * 3. Remove indices with values smaller than current (can't be maximums)
+ * 4. Add current index to deque
+ * 5. The window maximum is the value at the index at the front of deque
+ * 
+ * Time Complexity: O(n) - each index is added and removed at most once
  * Space Complexity: O(k)
  */
 class Solution {

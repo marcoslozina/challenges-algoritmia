@@ -1,22 +1,31 @@
 import java.util.*;
 
 /**
- * 150 - Evaluate Reverse Polish Notation
+ * LeetCode 150 - Evaluate Reverse Polish Notation
  * 
- * Descripción del problema:
- * Evaluar una expresión en notación polaca inversa (RPN). Operadores válidos: +, -, *, /
- * Cada operador opera sobre los dos números anteriores.
+ * Problem Description:
+ * You are given an array of strings tokens that represents an arithmetic expression
+ * in Reverse Polish Notation. Evaluate the expression and return an integer that represents
+ * the value of the expression.
  * 
- * Enfoque de solución:
- * Usamos un Stack para almacenar operandos:
- * 1. Si encontramos un número, lo agregamos al stack
- * 2. Si encontramos un operador:
- *    - Removemos los dos operandos superiores (b, a)
- *    - Aplicamos la operación: a operador b
- *    - Agregamos el resultado al stack
- * 3. Al final, el stack contiene un solo elemento: el resultado
+ * Valid operators are '+', '-', '*', and '/'. Each operand may be an integer or another expression.
+ * Note that division between two integers should truncate toward zero.
  * 
- * Time Complexity: O(n) donde n es el número de tokens
+ * Example:
+ * Input: tokens = ["2","1","+","3","*"]
+ * Output: 9
+ * Explanation: ((2 + 1) * 3) = 9
+ * 
+ * Solution Approach:
+ * We use a Stack to store operands:
+ * 1. If we find a number, add it to the stack
+ * 2. If we find an operator:
+ *    - Remove the two top operands (b, a)
+ *    - Apply the operation: a operator b
+ *    - Add the result to the stack
+ * 3. At the end, stack contains a single element: the result
+ * 
+ * Time Complexity: O(n) where n is the number of tokens
  * Space Complexity: O(n)
  */
 class Solution {

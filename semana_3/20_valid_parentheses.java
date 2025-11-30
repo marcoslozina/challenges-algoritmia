@@ -1,25 +1,32 @@
 import java.util.*;
 
 /**
- * 20 - Valid Parentheses
+ * LeetCode 20 - Valid Parentheses
  * 
- * Descripción del problema:
- * Dado un string que contiene solo '(', ')', '{', '}', '[' y ']', determinar si los
- * paréntesis están balanceados. Un string está balanceado si:
- * - Paréntesis abiertos deben cerrarse en el orden correcto
- * - Cada paréntesis cerrado tiene su correspondiente abierto
+ * Problem Description:
+ * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+ * determine if the input string is valid.
  * 
- * Enfoque de solución:
- * Usamos un Stack para rastrear paréntesis abiertos:
- * 1. Cuando encontramos un paréntesis abierto, lo agregamos al stack
- * 2. Cuando encontramos un paréntesis cerrado:
- *    - Si el stack está vacío, retornamos false
- *    - Si el tope del stack no coincide con el paréntesis cerrado, retornamos false
- *    - Si coincide, removemos del stack
- * 3. Al final, el stack debe estar vacío
+ * An input string is valid if:
+ * - Open brackets must be closed by the same type of brackets
+ * - Open brackets must be closed in the correct order
+ * - Every close bracket has a corresponding open bracket of the same type
  * 
- * Time Complexity: O(n) donde n es la longitud del string
- * Space Complexity: O(n) en el peor caso
+ * Example:
+ * Input: s = "()[]{}"
+ * Output: true
+ * 
+ * Solution Approach:
+ * We use a Stack to track open parentheses:
+ * 1. When we find an open parenthesis, add it to the stack
+ * 2. When we find a close parenthesis:
+ *    - If stack is empty, return false
+ *    - If top of stack doesn't match the close parenthesis, return false
+ *    - If it matches, remove from stack
+ * 3. At the end, stack must be empty
+ * 
+ * Time Complexity: O(n) where n is the length of the string
+ * Space Complexity: O(n) in worst case
  */
 class Solution {
     public boolean isValid(String s) {

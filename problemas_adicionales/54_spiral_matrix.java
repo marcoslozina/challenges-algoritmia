@@ -1,25 +1,27 @@
 import java.util.*;
 
 /**
- * 54 - Spiral Matrix
+ * LeetCode 54 - Spiral Matrix
  * 
- * Descripción del problema:
- * Dada una matriz de m x n, devolver todos los elementos en orden espiral (en sentido
- * horario): empezando desde la esquina superior izquierda, moviéndose a la derecha,
- * luego abajo, luego a la izquierda, y luego arriba, repitiendo el patrón.
+ * Problem Description:
+ * Given an m x n matrix, return all elements of the matrix in spiral order.
  * 
- * Enfoque de solución:
- * Usamos cuatro punteros para definir los límites actuales:
- * - top, bottom: filas superior e inferior
- * - left, right: columnas izquierda y derecha
+ * Example:
+ * Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+ * Output: [1,2,3,6,9,8,7,4,5]
  * 
- * Iteramos mientras top <= bottom y left <= right:
- * 1. Recorremos de izquierda a derecha en la fila superior
- * 2. Recorremos de arriba a abajo en la columna derecha
- * 3. Si aún hay filas, recorremos de derecha a izquierda en la fila inferior
- * 4. Si aún hay columnas, recorremos de abajo a arriba en la columna izquierda
+ * Solution Approach:
+ * We use four pointers to define current boundaries:
+ * - top, bottom: upper and lower rows
+ * - left, right: left and right columns
  * 
- * Después de cada dirección, ajustamos los límites correspondientes.
+ * Iterate while top <= bottom and left <= right:
+ * 1. Traverse right on top row
+ * 2. Traverse down on right column
+ * 3. If there are still rows, traverse left on bottom row
+ * 4. If there are still columns, traverse up on left column
+ * 
+ * After each direction, adjust corresponding boundaries.
  * 
  * Time Complexity: O(m * n) where m and n are matrix dimensions
  * Space Complexity: O(1) excluding output array

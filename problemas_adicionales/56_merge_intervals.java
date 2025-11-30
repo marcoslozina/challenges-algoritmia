@@ -3,27 +3,26 @@ import java.util.*;
 /**
  * LeetCode 56 - Merge Intervals
  * 
- * Descripción del problema:
- * Dado un array de intervalos donde intervals[i] = [starti, endi], fusionar todos los
- * intervalos que se solapan y retornar un array de los intervalos no solapados que
- * cubren todos los intervalos en la entrada.
+ * Problem Description:
+ * Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping
+ * intervals, and return an array of the non-overlapping intervals that cover all the
+ * intervals in the input.
  * 
- * Ejemplo:
+ * Example:
  * Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
  * Output: [[1,6],[8,10],[15,18]]
- * Explicación: Los intervalos [1,3] y [2,6] se solapan, se fusionan en [1,6].
+ * Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
  * 
- * Enfoque de solución:
- * 1. Ordenamos los intervalos por su tiempo de inicio (O(n log n))
- * 2. Iteramos sobre los intervalos ordenados:
- *    - Si el intervalo actual se solapa con el anterior (start <= end anterior),
- *      fusionamos actualizando el end al máximo de ambos
- *    - Si no se solapa, agregamos el intervalo anterior a la respuesta y
- *      comenzamos un nuevo intervalo
- * 3. Agregamos el último intervalo al final
+ * Solution Approach:
+ * 1. Sort intervals by their start time (O(n log n))
+ * 2. Iterate over sorted intervals:
+ *    - If current interval overlaps with previous (start <= previous end),
+ *      merge by updating end to maximum of both
+ *    - If no overlap, add previous interval to result and start a new interval
+ * 3. Add the last interval at the end
  * 
- * La clave es que después de ordenar, solo necesitamos comparar con el último
- * intervalo en la respuesta, ya que todos los anteriores ya están procesados.
+ * Key insight: After sorting, we only need to compare with the last interval in the
+ * result, since all previous ones are already processed.
  * 
  * Time Complexity: O(n * log(n)) where n is the number of intervals
  * Space Complexity: O(n)

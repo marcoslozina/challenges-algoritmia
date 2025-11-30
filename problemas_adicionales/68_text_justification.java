@@ -1,25 +1,33 @@
 import java.util.*;
 
 /**
- * 68 - Text Justification
+ * LeetCode 68 - Text Justification
  * 
- * Descripción del problema:
- * Dado un array de palabras y un ancho máximo, justificar el texto de manera que:
- * - Cada línea tenga exactamente maxWidth caracteres
- * - Las palabras se distribuyan uniformemente con espacios extra
- * - La última línea (o línea con una sola palabra) se justifica a la izquierda
- * - Los espacios extra se distribuyen de manera uniforme, con más espacios a la izquierda
+ * Problem Description:
+ * Given an array of strings words and a width maxWidth, format the text such that each
+ * line has exactly maxWidth characters and is fully (left and right) justified.
  * 
- * Enfoque de solución:
- * 1. Agrupamos palabras que caben en una línea:
- *    - Calculamos cuántas palabras caben considerando espacios entre ellas
- * 2. Para cada línea:
- *    - Si es la última línea o tiene una sola palabra: justificación izquierda
- *      (una palabra, un espacio, resto espacios al final)
- *    - Si no: distribución uniforme de espacios:
- *      - Calculamos espacios base entre palabras
- *      - Calculamos espacios extra que se distribuyen de izquierda a derecha
- * 3. Construimos cada línea agregando palabras y espacios según la distribución
+ * You should pack your words in a greedy approach; that is, pack as many words as you
+ * can in each line. Pad extra spaces ' ' when necessary so that each line has exactly
+ * maxWidth characters.
+ * 
+ * Extra spaces between words should be distributed as evenly as possible. If the number
+ * of spaces on a line does not divide evenly between words, the empty slots on the left
+ * will be assigned more spaces than the slots on the right.
+ * 
+ * For the last line of text, it should be left-justified, and no extra space is inserted
+ * between words.
+ * 
+ * Solution Approach:
+ * 1. Group words that fit in a line:
+ *    - Calculate how many words fit considering spaces between them
+ * 2. For each line:
+ *    - If it's the last line or has one word: left justification
+ *      (one word, one space, rest spaces at the end)
+ *    - Otherwise: uniform space distribution:
+ *      - Calculate base spaces between words
+ *      - Calculate extra spaces distributed left to right
+ * 3. Build each line by adding words and spaces according to distribution
  * 
  * Time Complexity: O(n) where n is the total number of characters
  * Space Complexity: O(n)

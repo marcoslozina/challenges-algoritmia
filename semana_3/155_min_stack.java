@@ -1,20 +1,27 @@
 import java.util.*;
 
 /**
- * 155 - Min Stack
+ * LeetCode 155 - Min Stack
  * 
- * Descripción del problema:
- * Diseñar un stack que soporte push, pop, top y obtener el elemento mínimo en tiempo O(1).
+ * Problem Description:
+ * Design a stack that supports push, pop, top, and retrieving the minimum element in constant O(1) time.
  * 
- * Enfoque de solución:
- * Usamos dos stacks:
- * 1. Stack principal para almacenar todos los valores
- * 2. Stack de mínimos que mantiene el mínimo actual en cada nivel
- *    - Al hacer push, comparamos con el mínimo actual y agregamos el menor
- *    - Al hacer pop, removemos de ambos stacks
- *    - getMin() retorna el tope del stack de mínimos
+ * Implement the MinStack class:
+ * - MinStack() initializes the stack object
+ * - void push(int val) pushes the element val onto the stack
+ * - void pop() removes the element on the top of the stack
+ * - int top() gets the top element of the stack
+ * - int getMin() retrieves the minimum element in the stack
  * 
- * Time Complexity: O(1) para todas las operaciones
+ * Solution Approach:
+ * We use two stacks:
+ * 1. Main stack to store all values
+ * 2. Min stack that maintains the current minimum at each level
+ *    - On push, compare with current minimum and add the smaller one
+ *    - On pop, remove from both stacks
+ *    - getMin() returns the top of the min stack
+ * 
+ * Time Complexity: O(1) for all operations
  * Space Complexity: O(n)
  */
 class MinStack {

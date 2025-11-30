@@ -1,22 +1,27 @@
 /**
  * LeetCode 2043 - Simple Bank System
  * 
- * Descripción del problema:
- * Tienes un sistema bancario que maneja múltiples cuentas. Implementa la clase Bank:
+ * Problem Description:
+ * You have been tasked with writing a program for a popular bank that will automate all
+ * its incoming transactions (transfer, deposit, and withdraw). The bank has n accounts
+ * numbered from 1 to n.
  * 
- * - Bank(long[] balance): Inicializa el objeto con las cuentas desde 1 hasta n.
- * - boolean transfer(int account1, int account2, long money): Transfiere money de account1 a account2.
- *   Retorna true si la transacción fue exitosa, false en caso contrario.
- * - boolean deposit(int account, long money): Deposita money en account. Retorna true si exitoso.
- * - boolean withdraw(int account, long money): Retira money de account. Retorna true si exitoso.
+ * Implement the Bank class:
+ * - Bank(long[] balance): Initializes the object with the n accounts' balances.
+ * - boolean transfer(int account1, int account2, long money): Transfers money dollars
+ *   from account1 to account2. Returns true if successful, false otherwise.
+ * - boolean deposit(int account, long money): Deposits money dollars into account.
+ *   Returns true if successful, false otherwise.
+ * - boolean withdraw(int account, long money): Withdraws money dollars from account.
+ *   Returns true if successful, false otherwise.
  * 
- * Todas las operaciones deben validar que las cuentas existan (1-indexed) y que haya fondos suficientes.
+ * All operations must validate that accounts exist (1-indexed) and have sufficient funds.
  * 
- * Enfoque de solución:
- * Utilizamos un array para almacenar los balances de cada cuenta. Cada operación:
- * 1. Valida que las cuentas estén en el rango válido (1-indexed)
- * 2. Verifica que haya fondos suficientes para transferencias y retiros
- * 3. Actualiza los balances directamente en O(1)
+ * Solution Approach:
+ * We use an array to store balances for each account. Each operation:
+ * 1. Validates accounts are in valid range (1-indexed)
+ * 2. Verifies sufficient funds for transfers and withdrawals
+ * 3. Updates balances directly in O(1)
  * 
  * Time Complexity: O(1) for all operations
  * Space Complexity: O(n) where n is the number of accounts

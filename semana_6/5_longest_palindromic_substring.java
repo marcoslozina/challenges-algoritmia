@@ -1,17 +1,22 @@
 /**
- * 5 - Longest Palindromic Substring
+ * LeetCode 5 - Longest Palindromic Substring
  * 
- * Descripción del problema:
- * Dado un string s, encontrar la subcadena palindrómica más larga en s.
+ * Problem Description:
+ * Given a string s, return the longest palindromic substring in s.
  * 
- * Enfoque de solución:
- * Expandir desde el centro (más eficiente que DP):
- * 1. Para cada posible centro (carácter o entre dos caracteres):
- *    - Expandimos hacia ambos lados mientras los caracteres coincidan
- *    - Actualizamos el máximo si encontramos un palíndromo más largo
- * 2. Hay dos tipos de centros:
- *    - Centro en un carácter (longitud impar)
- *    - Centro entre caracteres (longitud par)
+ * Example:
+ * Input: s = "babad"
+ * Output: "bab"
+ * Explanation: "aba" is also a valid answer.
+ * 
+ * Solution Approach:
+ * Expand around center (more efficient than DP):
+ * 1. For each possible center (character or between two characters):
+ *    - Expand to both sides while characters match
+ *    - Update maximum if we find a longer palindrome
+ * 2. There are two types of centers:
+ *    - Center on a character (odd length)
+ *    - Center between characters (even length)
  * 
  * Time Complexity: O(n^2) donde n es la longitud del string
  * Space Complexity: O(1)

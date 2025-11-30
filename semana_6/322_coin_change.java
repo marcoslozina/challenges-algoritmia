@@ -1,18 +1,28 @@
 import java.util.*;
 
 /**
- * 322 - Coin Change
+ * LeetCode 322 - Coin Change
  * 
- * Descripción del problema:
- * Dado un array de monedas y un monto, encontrar el número mínimo de monedas necesarias
- * para hacer ese monto. Si no es posible, retornar -1.
+ * Problem Description:
+ * You are given an integer array coins representing coins of different denominations and an
+ * integer amount representing a total amount of money.
  * 
- * Enfoque de solución:
- * DP con tabulación:
- * - dp[i] = número mínimo de monedas para hacer el monto i
- * - Para cada monto i, probamos cada moneda:
- *   - Si moneda <= i: dp[i] = min(dp[i], 1 + dp[i - moneda])
- * - Inicializamos dp[0] = 0, resto con un valor grande
+ * Return the fewest number of coins that you need to make up that amount. If that amount of
+ * money cannot be made up by any combination of the coins, return -1.
+ * 
+ * You may assume that you have an infinite number of each kind of coin.
+ * 
+ * Example:
+ * Input: coins = [1,2,5], amount = 11
+ * Output: 3
+ * Explanation: 11 = 5 + 5 + 1
+ * 
+ * Solution Approach:
+ * DP with tabulation:
+ * - dp[i] = minimum number of coins to make amount i
+ * - For each amount i, try each coin:
+ *   - If coin <= i: dp[i] = min(dp[i], 1 + dp[i - coin])
+ * - Initialize dp[0] = 0, rest with a large value
  * 
  * Time Complexity: O(amount * coins.length)
  * Space Complexity: O(amount)

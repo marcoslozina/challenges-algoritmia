@@ -1,22 +1,27 @@
 import java.util.*;
 
 /**
- * 3 - Longest Substring Without Repeating Characters
+ * LeetCode 3 - Longest Substring Without Repeating Characters
  * 
- * Descripción del problema:
- * Dado un string, encontrar la longitud de la subcadena más larga sin caracteres repetidos.
+ * Problem Description:
+ * Given a string s, find the length of the longest substring without repeating characters.
  * 
- * Enfoque de solución:
- * Usamos Sliding Window con HashMap:
- * 1. Mantenemos dos punteros (left y right) que definen la ventana
- * 2. Usamos un HashMap para rastrear la última posición de cada carácter
- * 3. Expandimos la ventana moviendo right:
- *    - Si encontramos un carácter repetido, movemos left a max(left, última_posición + 1)
- *    - Actualizamos la posición del carácter en el HashMap
- * 4. Actualizamos el máximo en cada iteración
+ * Example:
+ * Input: s = "abcabcbb"
+ * Output: 3
+ * Explanation: The answer is "abc", with the length of 3.
  * 
- * Time Complexity: O(n) donde n es la longitud del string
- * Space Complexity: O(min(n, m)) donde m es el tamaño del alfabeto
+ * Solution Approach:
+ * We use Sliding Window with HashMap:
+ * 1. Maintain two pointers (left and right) that define the window
+ * 2. Use a HashMap to track the last position of each character
+ * 3. Expand the window by moving right:
+ *    - If we find a repeated character, move left to max(left, last_position + 1)
+ *    - Update the character position in HashMap
+ * 4. Update maximum in each iteration
+ * 
+ * Time Complexity: O(n) where n is the length of the string
+ * Space Complexity: O(min(n, m)) where m is the alphabet size
  */
 class Solution {
     public int lengthOfLongestSubstring(String s) {

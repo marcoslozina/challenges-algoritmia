@@ -1,20 +1,25 @@
 /**
- * 543 - Diameter of Binary Tree
+ * LeetCode 543 - Diameter of Binary Tree
  * 
- * Descripción del problema:
- * Dada la raíz de un árbol binario, encontrar el diámetro del árbol.
- * El diámetro es la longitud del camino más largo entre dos nodos cualesquiera.
- * Este camino puede o no pasar por la raíz.
+ * Problem Description:
+ * Given the root of a binary tree, return the length of the diameter of the tree.
+ * The diameter of a binary tree is the length of the longest path between any two nodes
+ * in a tree. This path may or may not pass through the root.
  * 
- * Enfoque de solución:
- * Usamos recursión con estado:
- * 1. Para cada nodo, calculamos la altura de sus subárboles izquierdo y derecho
- * 2. El diámetro que pasa por este nodo = altura_izq + altura_der
- * 3. Mantenemos un máximo global del diámetro
- * 4. Retornamos la altura del subárbol (1 + max(altura_izq, altura_der))
+ * Example:
+ * Input: root = [1,2,3,4,5]
+ * Output: 3
+ * Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
  * 
- * Time Complexity: O(n) donde n es el número de nodos
- * Space Complexity: O(h) donde h es la altura del árbol
+ * Solution Approach:
+ * We use recursion with state:
+ * 1. For each node, calculate the height of its left and right subtrees
+ * 2. The diameter passing through this node = left_height + right_height
+ * 3. Maintain a global maximum of the diameter
+ * 4. Return the subtree height (1 + max(left_height, right_height))
+ * 
+ * Time Complexity: O(n) where n is the number of nodes
+ * Space Complexity: O(h) where h is the height of the tree
  */
 class Solution {
     private int maxDiameter = 0;

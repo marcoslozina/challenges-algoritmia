@@ -1,16 +1,25 @@
 /**
- * 3045 - Count Prefix and Suffix Pairs II
+ * LeetCode 3045 - Count Prefix and Suffix Pairs II
  * 
- * Descripción del problema:
- * Dado un array de palabras, contar el número de pares (i, j) donde i < j y la palabra
- * en el índice i es tanto prefijo como sufijo de la palabra en el índice j.
+ * Problem Description:
+ * You are given a 0-indexed string array words.
  * 
- * Enfoque de solución:
- * Para cada par de palabras (i, j) donde i < j:
- * 1. Verificamos que word1 tenga longitud menor o igual a word2
- * 2. Usamos startsWith() para verificar si es prefijo
- * 3. Usamos endsWith() para verificar si es sufijo
- * 4. Si ambas condiciones se cumplen, incrementamos el contador
+ * Let's define a boolean function isPrefixAndSuffix that takes two strings, str1 and str2:
+ * - isPrefixAndSuffix(str1, str2) returns true if str1 is both a prefix and a suffix of str2,
+ *   and false otherwise.
+ * 
+ * For example, isPrefixAndSuffix("aba", "ababa") is true because "aba" is a prefix of "ababa"
+ * and also a suffix, but isPrefixAndSuffix("abc", "abcd") is false.
+ * 
+ * Return an integer denoting the number of index pairs (i, j) such that i < j, and
+ * isPrefixAndSuffix(words[i], words[j]) is true.
+ * 
+ * Solution Approach:
+ * For each pair of words (i, j) where i < j:
+ * 1. Verify word1 has length less than or equal to word2
+ * 2. Use startsWith() to verify if it's a prefix
+ * 3. Use endsWith() to verify if it's a suffix
+ * 4. If both conditions are met, increment counter
  * 
  * Time Complexity: O(n * m) where n is number of words, m is average word length
  * Space Complexity: O(1)

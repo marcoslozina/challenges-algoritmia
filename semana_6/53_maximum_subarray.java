@@ -1,18 +1,26 @@
 /**
- * 53 - Maximum Subarray (Kadane's Algorithm)
+ * LeetCode 53 - Maximum Subarray (Kadane's Algorithm)
  * 
- * Descripción del problema:
- * Dado un array de enteros, encontrar la subsecuencia contigua con la suma máxima.
+ * Problem Description:
+ * Given an integer array nums, find the contiguous subarray (containing at least one number)
+ * which has the largest sum and return its sum.
  * 
- * Enfoque de solución:
- * Algoritmo de Kadane:
- * 1. Mantenemos dos variables:
- *    - currentSum: suma máxima que termina en el índice actual
- *    - maxSum: suma máxima global
- * 2. Para cada elemento:
+ * A subarray is a contiguous part of an array.
+ * 
+ * Example:
+ * Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+ * Output: 6
+ * Explanation: [4,-1,2,1] has the largest sum = 6.
+ * 
+ * Solution Approach:
+ * Kadane's Algorithm:
+ * 1. Maintain two variables:
+ *    - currentSum: maximum sum ending at current index
+ *    - maxSum: global maximum sum
+ * 2. For each element:
  *    - currentSum = max(nums[i], currentSum + nums[i])
- *    - Si empezamos de nuevo es mejor, empezamos de nuevo
- *    - Actualizamos maxSum si currentSum es mayor
+ *    - If starting fresh is better, start fresh
+ *    - Update maxSum if currentSum is greater
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)

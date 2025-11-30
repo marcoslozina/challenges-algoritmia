@@ -1,21 +1,26 @@
 import java.util.*;
 
 /**
- * 128 - Longest Consecutive Sequence
+ * LeetCode 128 - Longest Consecutive Sequence
  * 
- * Descripción del problema:
- * Dado un array de enteros no ordenado, encontrar la longitud de la secuencia consecutiva
- * más larga. El algoritmo debe ejecutarse en O(n).
+ * Problem Description:
+ * Given an unsorted array of integers nums, return the length of the longest consecutive
+ * elements sequence. You must write an algorithm that runs in O(n) time.
  * 
- * Enfoque de solución:
- * Usamos un Set para almacenar todos los números:
- * 1. Agregamos todos los números a un Set para búsqueda O(1)
- * 2. Para cada número, si es el inicio de una secuencia (no tiene num-1):
- *    - Contamos cuántos números consecutivos hay empezando desde ese número
- *    - Actualizamos el máximo
- * 3. Solo procesamos inicios de secuencias para evitar trabajo duplicado
+ * Example:
+ * Input: nums = [100,4,200,1,3,2]
+ * Output: 4
+ * Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
  * 
- * Time Complexity: O(n) - cada número se visita máximo 2 veces
+ * Solution Approach:
+ * We use a Set to store all numbers:
+ * 1. Add all numbers to a Set for O(1) lookup
+ * 2. For each number, if it's the start of a sequence (doesn't have num-1):
+ *    - Count how many consecutive numbers exist starting from that number
+ *    - Update the maximum
+ * 3. Only process sequence starts to avoid duplicate work
+ * 
+ * Time Complexity: O(n) - each number is visited at most 2 times
  * Space Complexity: O(n)
  */
 class Solution {

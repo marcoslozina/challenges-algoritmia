@@ -1,23 +1,28 @@
 import java.util.*;
 
 /**
- * 71 - Simplify Path
+ * LeetCode 71 - Simplify Path
  * 
- * Descripción del problema:
- * Dada una ruta absoluta de Unix, simplificarla. La ruta puede contener:
- * - '/' para separar directorios
- * - '.' para el directorio actual
- * - '..' para el directorio padre
- * - Múltiples '/' consecutivos deben tratarse como uno solo
+ * Problem Description:
+ * Given a string path, which is an absolute path (starting with a '/') to a file or
+ * directory in a Unix-style file system, convert it to the simplified canonical path.
  * 
- * Enfoque de solución:
- * 1. Dividimos la ruta por '/' y procesamos cada parte
- * 2. Usamos una pila (Deque) para mantener el camino actual:
- *    - Si encontramos "..", removemos el último directorio (si existe)
- *    - Si encontramos "." o "", lo ignoramos
- *    - Cualquier otro string lo agregamos a la pila
- * 3. Construimos la ruta final desde la pila, agregando "/" entre directorios
- * 4. Si la pila está vacía, devolvemos "/"
+ * In a Unix-style file system, a period '.' refers to the current directory, a double
+ * period '..' refers to the directory up a level, and any multiple consecutive slashes
+ * (i.e. '//') are treated as a single slash '/'.
+ * 
+ * Example:
+ * Input: path = "/home//foo/"
+ * Output: "/home/foo"
+ * 
+ * Solution Approach:
+ * 1. Split path by '/' and process each part
+ * 2. Use a stack (Deque) to maintain current path:
+ *    - If we find "..", remove last directory (if exists)
+ *    - If we find "." or "", ignore it
+ *    - Any other string, add to stack
+ * 3. Build final path from stack, adding "/" between directories
+ * 4. If stack is empty, return "/"
  * 
  * Time Complexity: O(n) where n is the path length
  * Space Complexity: O(n)

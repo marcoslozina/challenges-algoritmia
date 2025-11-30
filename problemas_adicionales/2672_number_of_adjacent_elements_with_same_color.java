@@ -1,23 +1,33 @@
 import java.util.Arrays;
 
 /**
- * 2672 - Number of Adjacent Elements With the Same Color
+ * LeetCode 2672 - Number of Adjacent Elements With the Same Color
  * 
- * Descripción del problema:
- * Dado un array de tamaño n inicialmente con ceros, y una serie de queries que
- * colorean un índice con un color, devolver después de cada query el número de
- * pares de elementos adyacentes que tienen el mismo color.
+ * Problem Description:
+ * There is a 0-indexed array nums of length n. Initially, all elements are uncolored
+ * (has a value of 0).
  * 
- * Enfoque de solución:
- * Mantenemos un contador de pares adyacentes con el mismo color:
- * 1. Para cada query, primero removemos las contribuciones del color anterior:
- *    - Si el elemento izquierdo tenía el mismo color, decrementamos
- *    - Si el elemento derecho tenía el mismo color, decrementamos
- * 2. Actualizamos el color en el índice
- * 3. Agregamos las nuevas contribuciones:
- *    - Si el elemento izquierdo tiene el mismo color, incrementamos
- *    - Si el elemento derecho tiene el mismo color, incrementamos
- * 4. Devolvemos el contador actual
+ * You are given a 2D integer array queries where queries[i] = [indexi, colori].
+ * 
+ * For each query, you are allowed to do the following operation on the array:
+ * - Color the index indexi with the color colori.
+ * 
+ * Return an array answer of the same length as queries where answer[i] is the number
+ * of adjacent elements with the same color after the ith query.
+ * 
+ * More formally, answer[i] is the number of indices j, such that 0 <= j < n - 1 and
+ * nums[j] == nums[j + 1] and nums[j] != 0 after the ith query.
+ * 
+ * Solution Approach:
+ * We maintain a counter of adjacent pairs with the same color:
+ * 1. For each query, first remove contributions from previous color:
+ *    - If left element had same color, decrement
+ *    - If right element had same color, decrement
+ * 2. Update color at index
+ * 3. Add new contributions:
+ *    - If left element has same color, increment
+ *    - If right element has same color, increment
+ * 4. Return current counter
  * 
  * Time Complexity: O(n) where n is the number of queries
  * Space Complexity: O(n)

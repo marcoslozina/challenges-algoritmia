@@ -1,19 +1,29 @@
 /**
- * 198 - House Robber
+ * LeetCode 198 - House Robber
  * 
- * Descripción del problema:
- * Eres un ladrón planeando robar casas en una calle. Cada casa tiene cierta cantidad de dinero.
- * No puedes robar dos casas adyacentes. ¿Cuál es la cantidad máxima que puedes robar?
+ * Problem Description:
+ * You are a professional robber planning to rob houses along a street. Each house has a certain
+ * amount of money stashed, the only constraint stopping you from robbing each of them is that
+ * adjacent houses have security systems connected and it will automatically contact the police
+ * if two adjacent houses were broken into on the same night.
  * 
- * Enfoque de solución:
- * DP 1D:
- * - dp[i] = máximo dinero que podemos robar hasta la casa i
- * - Para cada casa, tenemos dos opciones:
- *   1. Robar esta casa: nums[i] + dp[i-2]
- *   2. No robar esta casa: dp[i-1]
+ * Given an integer array nums representing the amount of money of each house, return the maximum
+ * amount of money you can rob tonight without alerting the police.
+ * 
+ * Example:
+ * Input: nums = [1,2,3,1]
+ * Output: 4
+ * Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount = 1 + 3 = 4.
+ * 
+ * Solution Approach:
+ * 1D DP:
+ * - dp[i] = maximum money we can rob up to house i
+ * - For each house, we have two options:
+ *   1. Rob this house: nums[i] + dp[i-2]
+ *   2. Don't rob this house: dp[i-1]
  * - dp[i] = max(dp[i-1], nums[i] + dp[i-2])
  * 
- * Optimización: Solo necesitamos los dos valores anteriores.
+ * Optimization: We only need the two previous values.
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)

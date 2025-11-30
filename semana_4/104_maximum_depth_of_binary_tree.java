@@ -1,20 +1,24 @@
 /**
- * 104 - Maximum Depth of Binary Tree
+ * LeetCode 104 - Maximum Depth of Binary Tree
  * 
- * Descripción del problema:
- * Dada la raíz de un árbol binario, encontrar su profundidad máxima.
- * La profundidad es el número de nodos en el camino más largo desde el nodo raíz
- * hasta el nodo hoja más lejano.
+ * Problem Description:
+ * Given the root of a binary tree, return its maximum depth.
+ * A binary tree's maximum depth is the number of nodes along the longest path
+ * from the root node down to the farthest leaf node.
  * 
- * Enfoque de solución:
- * Usamos DFS recursivo:
- * 1. Caso base: si el nodo es null, retornamos 0
- * 2. Recursivamente calculamos la profundidad del subárbol izquierdo
- * 3. Recursivamente calculamos la profundidad del subárbol derecho
- * 4. Retornamos 1 + el máximo de ambas profundidades
+ * Example:
+ * Input: root = [3,9,20,null,null,15,7]
+ * Output: 3
  * 
- * Time Complexity: O(n) donde n es el número de nodos
- * Space Complexity: O(h) donde h es la altura del árbol (stack de recursión)
+ * Solution Approach:
+ * We use recursive DFS:
+ * 1. Base case: if node is null, return 0
+ * 2. Recursively calculate depth of left subtree
+ * 3. Recursively calculate depth of right subtree
+ * 4. Return 1 + maximum of both depths
+ * 
+ * Time Complexity: O(n) where n is the number of nodes
+ * Space Complexity: O(h) where h is the height of the tree (recursion stack)
  */
 class Solution {
     public int maxDepth(TreeNode root) {

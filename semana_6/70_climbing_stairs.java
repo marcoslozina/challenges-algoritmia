@@ -1,18 +1,22 @@
 /**
- * 70 - Climbing Stairs
+ * LeetCode 70 - Climbing Stairs
  * 
- * Descripción del problema:
- * Estás subiendo una escalera. Toma n pasos para llegar arriba.
- * Cada vez puedes subir 1 o 2 pasos. ¿De cuántas formas distintas puedes subir?
+ * Problem Description:
+ * You are climbing a staircase. It takes n steps to reach the top.
+ * Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
  * 
- * Enfoque de solución:
- * Este es básicamente el problema de Fibonacci:
- * - Para llegar al escalón n, puedes venir del escalón n-1 o n-2
+ * Example:
+ * Input: n = 3
+ * Output: 3
+ * Explanation: There are three ways to climb to the top: 1 step + 1 step + 1 step, 1 step + 2 steps, 2 steps + 1 step
+ * 
+ * Solution Approach:
+ * This is essentially the Fibonacci problem:
+ * - To reach step n, you can come from step n-1 or n-2
  * - dp[n] = dp[n-1] + dp[n-2]
- * - Casos base: dp[1] = 1, dp[2] = 2
+ * - Base cases: dp[1] = 1, dp[2] = 2
  * 
- * Optimización: Solo necesitamos los dos valores anteriores, así que usamos
- * variables en lugar de array para O(1) espacio.
+ * Optimization: We only need the two previous values, so we use variables instead of an array for O(1) space.
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)

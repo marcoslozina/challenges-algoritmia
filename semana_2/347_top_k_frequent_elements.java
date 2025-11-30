@@ -1,19 +1,23 @@
 import java.util.*;
 
 /**
- * 347 - Top K Frequent Elements
+ * LeetCode 347 - Top K Frequent Elements
  * 
- * Descripción del problema:
- * Dado un array de enteros y un entero k, devolver los k elementos más frecuentes.
- * Puedes devolver la respuesta en cualquier orden.
+ * Problem Description:
+ * Given an integer array nums and an integer k, return the k most frequent elements.
+ * You may return the answer in any order.
  * 
- * Enfoque de solución:
- * 1. Contamos la frecuencia de cada elemento usando HashMap
- * 2. Usamos un PriorityQueue (min-heap) de tamaño k para mantener los k más frecuentes
- * 3. Iteramos sobre las frecuencias y mantenemos solo los k mayores
- * 4. Extraemos los elementos del heap
+ * Example:
+ * Input: nums = [1,1,1,2,2,3], k = 2
+ * Output: [1,2]
  * 
- * Time Complexity: O(n + m * log(k)) donde n es tamaño del array, m es número de elementos únicos
+ * Solution Approach:
+ * 1. Count frequency of each element using HashMap
+ * 2. Use a PriorityQueue (min-heap) of size k to maintain the k most frequent
+ * 3. Iterate over frequencies and keep only the k largest
+ * 4. Extract elements from the heap
+ * 
+ * Time Complexity: O(n + m * log(k)) where n is array size, m is number of unique elements
  * Space Complexity: O(m + k)
  */
 class Solution {

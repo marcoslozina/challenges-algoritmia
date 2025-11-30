@@ -1,25 +1,33 @@
 import java.util.*;
 
 /**
- * 332 - Reconstruct Itinerary
+ * LeetCode 332 - Reconstruct Itinerary
  * 
- * Descripción del problema:
- * Dada una lista de tickets de avión [from, to], reconstruir el itinerario en orden.
- * Todos los tickets deben usarse exactamente una vez. Si hay múltiples itinerarios
- * válidos, devolver el lexicográficamente menor. El viaje siempre comienza en "JFK".
+ * Problem Description:
+ * You are given a list of airline tickets where tickets[i] = [fromi, toi] represent
+ * the departure and arrival airports of one flight. Reconstruct the itinerary in order
+ * and return it.
  * 
- * Enfoque de solución:
- * Usamos DFS (Depth-First Search) con ordenamiento lexicográfico:
- * 1. Construimos un grafo dirigido: Map<String, PriorityQueue<String>>
- *    - PriorityQueue asegura que siempre elegimos el destino lexicográficamente menor
- * 2. Realizamos DFS desde "JFK":
- *    - Visitamos todos los destinos del aeropuerto actual en orden lexicográfico
- *    - Usamos el ticket (removemos de la PriorityQueue) antes de hacer DFS recursivo
- * 3. Agregamos el aeropuerto actual al resultado después de procesar todos sus destinos
- * 4. Invertimos el resultado al final (porque agregamos en orden post-orden)
+ * All of the tickets belong to a man who departs from "JFK", thus, the itinerary must
+ * begin with "JFK". If there are multiple valid itineraries, you should return the
+ * itinerary that has the smallest lexical order when read as a single string.
  * 
- * Este enfoque garantiza que usamos todos los tickets y encontramos el camino
- * lexicográficamente menor usando el algoritmo de Hierholzer.
+ * Example:
+ * Input: tickets = [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]
+ * Output: ["JFK","MUC","LHR","SFO","SJC"]
+ * 
+ * Solution Approach:
+ * We use DFS (Depth-First Search) with lexicographic ordering:
+ * 1. Build a directed graph: Map<String, PriorityQueue<String>>
+ *    - PriorityQueue ensures we always choose lexicographically smallest destination
+ * 2. Perform DFS from "JFK":
+ *    - Visit all destinations of current airport in lexicographic order
+ *    - Use ticket (remove from PriorityQueue) before recursive DFS
+ * 3. Add current airport to result after processing all its destinations
+ * 4. Reverse result at the end (because we add in post-order)
+ * 
+ * This approach guarantees we use all tickets and find the lexicographically smallest
+ * path using Hierholzer's algorithm.
  * 
  * Time Complexity: O(E * log(E)) where E is the number of edges
  * Space Complexity: O(E)

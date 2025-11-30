@@ -1,21 +1,31 @@
 import java.util.*;
 
 /**
- * 3161 - Block Placement Queries
+ * LeetCode 3161 - Block Placement Queries
  * 
- * Descripción del problema:
- * Dado un array de queries, donde cada query puede ser:
- * - Agregar un obstáculo en una posición
- * - Consultar si se puede colocar un bloque de cierto tamaño en una posición específica
- * Un bloque de tamaño 'size' puede colocarse en posición 'idx' si hay al menos 'size' espacios
- * consecutivos libres (sin obstáculos) que incluyan o precedan a 'idx'.
+ * Problem Description:
+ * You are given an array queries where queries[i] = [typei, sizei, indexi].
  * 
- * Enfoque de solución:
- * Mantenemos una lista ordenada de obstáculos usando búsqueda binaria:
- * 1. Para agregar obstáculo: insertamos en orden usando binary search (O(log n))
- * 2. Para consultar: buscamos el último obstáculo antes de la posición objetivo
- *    y verificamos si hay espacio suficiente para el bloque
- * 3. Usamos Collections.binarySearch para mantener la lista ordenada eficientemente
+ * There is a 0-indexed array nums of size n, initially all elements are 0.
+ * 
+ * For each query:
+ * - If typei == 1: Place a block of size sizei at index indexi. The block must fit
+ *   completely within the array (no part can be outside).
+ * - If typei == 2: Remove the block at index indexi (if exists).
+ * 
+ * A block placement is valid if:
+ * - The block fits completely within the array
+ * - No part of the block overlaps with an existing block
+ * 
+ * Return an array result where result[i] is true if the ith query can be performed,
+ * and false otherwise.
+ * 
+ * Solution Approach:
+ * We maintain a sorted list of obstacles using binary search:
+ * 1. To add obstacle: insert in order using binary search (O(log n))
+ * 2. To query: find last obstacle before target position and verify if there's
+ *    enough space for the block
+ * 3. Use Collections.binarySearch to maintain sorted list efficiently
  * 
  * Time Complexity: O(n * log(n)) where n is the number of queries
  * Space Complexity: O(n)

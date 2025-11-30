@@ -1,23 +1,28 @@
 import java.util.*;
 
 /**
- * 3071 - Minimum Operations to Write the Letter Y on a Grid
+ * LeetCode 3071 - Minimum Operations to Write the Letter Y on a Grid
  * 
- * Descripción del problema:
- * Dada una cuadrícula de n x m con valores 0, 1, o 2, necesitamos cambiar valores
- * para formar la letra Y. La letra Y consiste en:
- * - Dos diagonales desde las esquinas superiores hasta el centro
- * - Una línea vertical desde el centro hasta abajo
- * Encuentra el número mínimo de cambios necesarios, donde las celdas Y deben tener
- * el mismo valor y las celdas no-Y deben tener un valor diferente.
+ * Problem Description:
+ * You are given a 0-indexed n x n grid where each cell contains a value 0, 1, or 2.
  * 
- * Enfoque de solución:
- * 1. Primero identificamos qué celdas pertenecen al patrón Y:
- *    - Diagonal izquierda: i == j && i < center
- *    - Diagonal derecha: i + j == n-1 && i < center
- *    - Línea vertical: j == center && i >= center
- * 2. Contamos las frecuencias de valores en celdas Y y no-Y
- * 3. Probamos todas las combinaciones de valores para Y y no-Y (9 combinaciones)
+ * You need to change some cells to form a Y pattern. The Y pattern consists of:
+ * - Two diagonal lines from the top corners meeting at the center
+ * - A vertical line from the center extending downward
+ * 
+ * The Y pattern must satisfy:
+ * - All cells in the Y pattern must have the same value
+ * - All cells not in the Y pattern must have a different value (and the same among themselves)
+ * 
+ * Return the minimum number of operations needed to form the Y pattern.
+ * 
+ * Solution Approach:
+ * 1. First identify which cells belong to the Y pattern:
+ *    - Left diagonal: i == j && i < center
+ *    - Right diagonal: i + j == n-1 && i < center
+ *    - Vertical line: j == center && i >= center
+ * 2. Count frequencies of values in Y cells and non-Y cells
+ * 3. Try all combinations of values for Y and non-Y (9 combinations)
  * 4. Calculamos las operaciones necesarias para cada combinación y elegimos el mínimo
  * 
  * Time Complexity: O(n * m) where n and m are grid dimensions
