@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 205 - Isomorphic Strings
  * 
+ * Link: https://leetcode.com/problems/isomorphic-strings/
+ * 
  * Problem Description:
  * Given two strings s and t, determine if they are isomorphic.
  * Two strings s and t are isomorphic if the characters in s can be replaced to get t.

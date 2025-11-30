@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 155 - Min Stack
  * 
+ * Link: https://leetcode.com/problems/min-stack/
+ * 
  * Problem Description:
  * Design a stack that supports push, pop, top, and retrieving the minimum element in constant O(1) time.
  * 

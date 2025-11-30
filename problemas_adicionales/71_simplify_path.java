@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 71 - Simplify Path
  * 
+ * Link: https://leetcode.com/problems/simplify-path/
+ * 
  * Problem Description:
  * Given a string path, which is an absolute path (starting with a '/') to a file or
  * directory in a Unix-style file system, convert it to the simplified canonical path.

@@ -3,6 +3,8 @@ import java.util.Arrays;
 /**
  * LeetCode 2672 - Number of Adjacent Elements With the Same Color
  * 
+ * Link: https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/
+ * 
  * Problem Description:
  * There is a 0-indexed array nums of length n. Initially, all elements are uncolored
  * (has a value of 0).

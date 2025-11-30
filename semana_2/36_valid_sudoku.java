@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 36 - Valid Sudoku
  * 
+ * Link: https://leetcode.com/problems/valid-sudoku/
+ * 
  * Problem Description:
  * Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated
  * according to the following rules:

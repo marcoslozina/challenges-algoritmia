@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 20 - Valid Parentheses
  * 
+ * Link: https://leetcode.com/problems/valid-parentheses/
+ * 
  * Problem Description:
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
  * determine if the input string is valid.

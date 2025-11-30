@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 232 - Implement Queue using Stacks
  * 
+ * Link: https://leetcode.com/problems/implement-queue-using-stacks/
+ * 
  * Problem Description:
  * Implement a first in first out (FIFO) queue using only two stacks. The implemented queue
  * should support all the functions of a normal queue (push, peek, pop, and empty).

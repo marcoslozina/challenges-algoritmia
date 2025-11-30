@@ -1,6 +1,8 @@
 /**
  * LeetCode 2043 - Simple Bank System
  * 
+ * Link: https://leetcode.com/problems/simple-bank-system/
+ * 
  * Problem Description:
  * You have been tasked with writing a program for a popular bank that will automate all
  * its incoming transactions (transfer, deposit, and withdraw). The bank has n accounts

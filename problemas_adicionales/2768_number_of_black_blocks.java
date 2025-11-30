@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 2768 - Number of Black Blocks
  * 
+ * Link: https://leetcode.com/problems/number-of-black-blocks/
+ * 
  * Problem Description:
  * You are given two integers m and n representing the dimensions of a floor plan of a
  * room. The floor plan is an m x n grid where each cell is either black (1) or white (0).

@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * LeetCode 723 - Candy Crush
  * 
+ * Link: https://leetcode.com/problems/candy-crush/
+ * 
  * Problem Description:
  * This question is about implementing a basic elimination algorithm for Candy Crush.
  * 
