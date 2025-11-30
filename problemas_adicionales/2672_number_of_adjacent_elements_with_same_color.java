@@ -76,9 +76,12 @@ class Solution {
         int n1 = 4;
         int[][] queries1 = {{0, 2}, {1, 2}, {3, 1}};
         int[] result1 = sol.colorTheArray(n1, queries1);
-        assert result1[0] == 0 : "Test 1.1 failed";
-        assert result1[1] == 1 : "Test 1.2 failed";
-        assert result1[2] == 0 : "Test 1.3 failed";
+        // After query 0: [2,0,0,0] -> 0 pairs
+        // After query 1: [2,2,0,0] -> 1 pair (indices 0-1)
+        // After query 2: [2,2,0,1] -> 1 pair (still 0-1)
+        assert result1[0] == 0 : "Test 1.1 failed: expected 0, got " + result1[0];
+        assert result1[1] == 1 : "Test 1.2 failed: expected 1, got " + result1[1];
+        assert result1[2] == 1 : "Test 1.3 failed: expected 1, got " + result1[2];
         System.out.println("✓ Test 1 passed: " + Arrays.toString(result1));
         
         // Test 2: Múltiples colores iguales

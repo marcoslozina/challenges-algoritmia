@@ -1,0 +1,535 @@
+=== Compiling and running all tests ===
+
+--- Processing directory: semana_2 ---
+  Compiling: 128_longest_consecutive_sequence.java
+  ✗ 128_longest_consecutive_sequence.java - FAILED (exit code: 1)
+Error: Could not find or load main class 128_longest_consecutive_sequence
+Caused by: java.lang.ClassNotFoundException: 128_longest_consecutive_sequence
+
+  Compiling: 202_happy_number.java
+  ✗ 202_happy_number.java - FAILED (exit code: 1)
+Error: Could not find or load main class 202_happy_number
+Caused by: java.lang.ClassNotFoundException: 202_happy_number
+
+  Compiling: 205_isomorphic_strings.java
+  ✗ 205_isomorphic_strings.java - FAILED (exit code: 1)
+Error: Could not find or load main class 205_isomorphic_strings
+Caused by: java.lang.ClassNotFoundException: 205_isomorphic_strings
+
+  Compiling: 347_top_k_frequent_elements.java
+  ✗ 347_top_k_frequent_elements.java - FAILED (exit code: 1)
+Error: Could not find or load main class 347_top_k_frequent_elements
+Caused by: java.lang.ClassNotFoundException: 347_top_k_frequent_elements
+
+  Compiling: 36_valid_sudoku.java
+  ✗ 36_valid_sudoku.java - FAILED (exit code: 1)
+Error: Could not find or load main class 36_valid_sudoku
+Caused by: java.lang.ClassNotFoundException: 36_valid_sudoku
+
+  Compiling: 49_group_anagrams.java
+  ✗ 49_group_anagrams.java - FAILED (exit code: 1)
+Error: Could not find or load main class 49_group_anagrams
+Caused by: java.lang.ClassNotFoundException: 49_group_anagrams
+
+--- Processing directory: semana_3 ---
+  Compiling: 150_evaluate_reverse_polish_notation.java
+  ✗ 150_evaluate_reverse_polish_notation.java - FAILED (exit code: 1)
+Error: Could not find or load main class 150_evaluate_reverse_polish_notation
+Caused by: java.lang.ClassNotFoundException: 150_evaluate_reverse_polish_notation
+
+  Compiling: 155_min_stack.java
+  ✗ 155_min_stack.java - FAILED (exit code: 1)
+Error: Could not find or load main class 155_min_stack
+Caused by: java.lang.ClassNotFoundException: 155_min_stack
+
+  Compiling: 20_valid_parentheses.java
+  ✗ 20_valid_parentheses.java - FAILED (exit code: 1)
+Error: Could not find or load main class 20_valid_parentheses
+Caused by: java.lang.ClassNotFoundException: 20_valid_parentheses
+
+  Compiling: 232_implement_queue_using_stacks.java
+  ✗ 232_implement_queue_using_stacks.java - FAILED (exit code: 1)
+Error: Could not find or load main class 232_implement_queue_using_stacks
+Caused by: java.lang.ClassNotFoundException: 232_implement_queue_using_stacks
+
+  Compiling: 739_daily_temperatures.java
+  ✗ 739_daily_temperatures.java - FAILED (exit code: 1)
+Error: Could not find or load main class 739_daily_temperatures
+Caused by: java.lang.ClassNotFoundException: 739_daily_temperatures
+
+--- Processing directory: semana_4 ---
+  Compiling: 101_symmetric_tree.java
+semana_4/101_symmetric_tree.java:25: error: cannot find symbol
+    public boolean isSymmetric(TreeNode root) {
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:29: error: cannot find symbol
+    private boolean isMirror(TreeNode node1, TreeNode node2) {
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:29: error: cannot find symbol
+    private boolean isMirror(TreeNode node1, TreeNode node2) {
+                                             ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:49: error: cannot find symbol
+        TreeNode root1 = new TreeNode(1);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:49: error: cannot find symbol
+        TreeNode root1 = new TreeNode(1);
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:50: error: cannot find symbol
+        root1.left = new TreeNode(2);
+                         ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:51: error: cannot find symbol
+        root1.right = new TreeNode(2);
+                          ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:52: error: cannot find symbol
+        root1.left.left = new TreeNode(3);
+                              ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:53: error: cannot find symbol
+        root1.left.right = new TreeNode(4);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:54: error: cannot find symbol
+        root1.right.left = new TreeNode(4);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:55: error: cannot find symbol
+        root1.right.right = new TreeNode(3);
+                                ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:60: error: cannot find symbol
+        TreeNode root2 = new TreeNode(1);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:60: error: cannot find symbol
+        TreeNode root2 = new TreeNode(1);
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:61: error: cannot find symbol
+        root2.left = new TreeNode(2);
+                         ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:62: error: cannot find symbol
+        root2.right = new TreeNode(2);
+                          ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:63: error: cannot find symbol
+        root2.left.right = new TreeNode(3);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:64: error: cannot find symbol
+        root2.right.right = new TreeNode(3);
+                                ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:69: error: cannot find symbol
+        TreeNode root3 = new TreeNode(1);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/101_symmetric_tree.java:69: error: cannot find symbol
+        TreeNode root3 = new TreeNode(1);
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+19 errors
+  ✗ 101_symmetric_tree.java - COMPILATION ERROR
+
+  Compiling: 104_maximum_depth_of_binary_tree.java
+  ✗ 104_maximum_depth_of_binary_tree.java - FAILED (exit code: 1)
+Error: Could not find or load main class 104_maximum_depth_of_binary_tree
+Caused by: java.lang.ClassNotFoundException: 104_maximum_depth_of_binary_tree
+
+  Compiling: 226_invert_binary_tree.java
+semana_4/226_invert_binary_tree.java:24: error: cannot find symbol
+    public TreeNode invertTree(TreeNode root) {
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:24: error: cannot find symbol
+    public TreeNode invertTree(TreeNode root) {
+           ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:30: error: cannot find symbol
+        TreeNode temp = root.left;
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:47: error: cannot find symbol
+        TreeNode root1 = new TreeNode(4);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:47: error: cannot find symbol
+        TreeNode root1 = new TreeNode(4);
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:48: error: cannot find symbol
+        root1.left = new TreeNode(2);
+                         ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:49: error: cannot find symbol
+        root1.right = new TreeNode(7);
+                          ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:50: error: cannot find symbol
+        root1.left.left = new TreeNode(1);
+                              ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:51: error: cannot find symbol
+        root1.left.right = new TreeNode(3);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:52: error: cannot find symbol
+        root1.right.left = new TreeNode(6);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:53: error: cannot find symbol
+        root1.right.right = new TreeNode(9);
+                                ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:55: error: cannot find symbol
+        TreeNode inverted1 = sol.invertTree(root1);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/226_invert_binary_tree.java:61: error: cannot find symbol
+        TreeNode inverted2 = sol.invertTree(null);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+13 errors
+  ✗ 226_invert_binary_tree.java - COMPILATION ERROR
+
+  Compiling: 236_lowest_common_ancestor.java
+semana_4/236_lowest_common_ancestor.java:26: error: cannot find symbol
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+                                         ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:26: error: cannot find symbol
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+                                                        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:26: error: cannot find symbol
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+                                                                    ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:26: error: cannot find symbol
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+           ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:31: error: cannot find symbol
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:32: error: cannot find symbol
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:47: error: cannot find symbol
+        TreeNode root1 = new TreeNode(3);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:47: error: cannot find symbol
+        TreeNode root1 = new TreeNode(3);
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:48: error: cannot find symbol
+        root1.left = new TreeNode(5);
+                         ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:49: error: cannot find symbol
+        root1.right = new TreeNode(1);
+                          ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:50: error: cannot find symbol
+        root1.left.left = new TreeNode(6);
+                              ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:51: error: cannot find symbol
+        root1.left.right = new TreeNode(2);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:52: error: cannot find symbol
+        root1.right.left = new TreeNode(0);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:53: error: cannot find symbol
+        root1.right.right = new TreeNode(8);
+                                ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:54: error: cannot find symbol
+        root1.left.right.left = new TreeNode(7);
+                                    ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:55: error: cannot find symbol
+        root1.left.right.right = new TreeNode(4);
+                                     ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:57: error: cannot find symbol
+        TreeNode p1 = root1.left; // 5
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:58: error: cannot find symbol
+        TreeNode q1 = root1.right; // 1
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:59: error: cannot find symbol
+        TreeNode lca1 = sol.lowestCommonAncestor(root1, p1, q1);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:64: error: cannot find symbol
+        TreeNode p2 = root1.left; // 5
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:65: error: cannot find symbol
+        TreeNode q2 = root1.left.right.right; // 4
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/236_lowest_common_ancestor.java:66: error: cannot find symbol
+        TreeNode lca2 = sol.lowestCommonAncestor(root1, p2, q2);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+22 errors
+  ✗ 236_lowest_common_ancestor.java - COMPILATION ERROR
+
+  Compiling: 543_diameter_of_binary_tree.java
+semana_4/543_diameter_of_binary_tree.java:27: error: cannot find symbol
+    public int diameterOfBinaryTree(TreeNode root) {
+                                    ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:33: error: cannot find symbol
+    private int height(TreeNode node) {
+                       ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:54: error: cannot find symbol
+        TreeNode root1 = new TreeNode(1);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:54: error: cannot find symbol
+        TreeNode root1 = new TreeNode(1);
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:55: error: cannot find symbol
+        root1.left = new TreeNode(2);
+                         ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:56: error: cannot find symbol
+        root1.right = new TreeNode(3);
+                          ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:57: error: cannot find symbol
+        root1.left.left = new TreeNode(4);
+                              ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:58: error: cannot find symbol
+        root1.left.right = new TreeNode(5);
+                               ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:64: error: cannot find symbol
+        TreeNode root2 = new TreeNode(1);
+        ^
+  symbol:   class TreeNode
+  location: class Solution
+semana_4/543_diameter_of_binary_tree.java:64: error: cannot find symbol
+        TreeNode root2 = new TreeNode(1);
+                             ^
+  symbol:   class TreeNode
+  location: class Solution
+10 errors
+  ✗ 543_diameter_of_binary_tree.java - COMPILATION ERROR
+
+--- Processing directory: semana_5 ---
+  Compiling: 239_sliding_window_maximum.java
+  ✗ 239_sliding_window_maximum.java - FAILED (exit code: 1)
+Error: Could not find or load main class 239_sliding_window_maximum
+Caused by: java.lang.ClassNotFoundException: 239_sliding_window_maximum
+
+  Compiling: 3_longest_substring_without_repeating_characters.java
+  ✗ 3_longest_substring_without_repeating_characters.java - FAILED (exit code: 1)
+Error: Could not find or load main class 3_longest_substring_without_repeating_characters
+Caused by: java.lang.ClassNotFoundException: 3_longest_substring_without_repeating_characters
+
+  Compiling: 57_insert_interval.java
+  ✗ 57_insert_interval.java - FAILED (exit code: 1)
+Error: Could not find or load main class 57_insert_interval
+Caused by: java.lang.ClassNotFoundException: 57_insert_interval
+
+  Compiling: 76_minimum_window_substring.java
+  ✗ 76_minimum_window_substring.java - FAILED (exit code: 1)
+Error: Could not find or load main class 76_minimum_window_substring
+Caused by: java.lang.ClassNotFoundException: 76_minimum_window_substring
+
+--- Processing directory: semana_6 ---
+  Compiling: 198_house_robber.java
+  ✗ 198_house_robber.java - FAILED (exit code: 1)
+Error: Could not find or load main class 198_house_robber
+Caused by: java.lang.ClassNotFoundException: 198_house_robber
+
+  Compiling: 322_coin_change.java
+  ✗ 322_coin_change.java - FAILED (exit code: 1)
+Error: Could not find or load main class 322_coin_change
+Caused by: java.lang.ClassNotFoundException: 322_coin_change
+
+  Compiling: 53_maximum_subarray.java
+  ✗ 53_maximum_subarray.java - FAILED (exit code: 1)
+Error: Could not find or load main class 53_maximum_subarray
+Caused by: java.lang.ClassNotFoundException: 53_maximum_subarray
+
+  Compiling: 5_longest_palindromic_substring.java
+  ✗ 5_longest_palindromic_substring.java - FAILED (exit code: 1)
+Error: Could not find or load main class 5_longest_palindromic_substring
+Caused by: java.lang.ClassNotFoundException: 5_longest_palindromic_substring
+
+  Compiling: 70_climbing_stairs.java
+  ✗ 70_climbing_stairs.java - FAILED (exit code: 1)
+Error: Could not find or load main class 70_climbing_stairs
+Caused by: java.lang.ClassNotFoundException: 70_climbing_stairs
+
+--- Processing directory: problemas_adicionales ---
+  Compiling: 146_lru_cache.java
+  ✗ 146_lru_cache.java - FAILED (exit code: 1)
+Error: Could not find or load main class 146_lru_cache
+Caused by: java.lang.ClassNotFoundException: 146_lru_cache
+
+  Compiling: 1861_rotating_the_box.java
+  ✗ 1861_rotating_the_box.java - FAILED (exit code: 1)
+Error: Could not find or load main class 1861_rotating_the_box
+Caused by: java.lang.ClassNotFoundException: 1861_rotating_the_box
+
+  Compiling: 2043_simple_bank_system.java
+  ✗ 2043_simple_bank_system.java - FAILED (exit code: 1)
+Error: Could not find or load main class 2043_simple_bank_system
+Caused by: java.lang.ClassNotFoundException: 2043_simple_bank_system
+
+  Compiling: 2672_number_of_adjacent_elements_with_same_color.java
+  ✗ 2672_number_of_adjacent_elements_with_same_color.java - FAILED (exit code: 1)
+Error: Could not find or load main class 2672_number_of_adjacent_elements_with_same_color
+Caused by: java.lang.ClassNotFoundException: 2672_number_of_adjacent_elements_with_same_color
+
+  Compiling: 2768_number_of_black_blocks.java
+  ✗ 2768_number_of_black_blocks.java - FAILED (exit code: 1)
+Error: Could not find or load main class 2768_number_of_black_blocks
+Caused by: java.lang.ClassNotFoundException: 2768_number_of_black_blocks
+
+  Compiling: 3034_number_of_subarrays_that_match_pattern_i.java
+  ✗ 3034_number_of_subarrays_that_match_pattern_i.java - FAILED (exit code: 1)
+Error: Could not find or load main class 3034_number_of_subarrays_that_match_pattern_i
+Caused by: java.lang.ClassNotFoundException: 3034_number_of_subarrays_that_match_pattern_i
+
+  Compiling: 3045_count_prefix_and_suffix_pairs_ii.java
+  ✗ 3045_count_prefix_and_suffix_pairs_ii.java - FAILED (exit code: 1)
+Error: Could not find or load main class 3045_count_prefix_and_suffix_pairs_ii
+Caused by: java.lang.ClassNotFoundException: 3045_count_prefix_and_suffix_pairs_ii
+
+  Compiling: 3071_minimum_operations_to_write_letter_y.java
+  ✗ 3071_minimum_operations_to_write_letter_y.java - FAILED (exit code: 1)
+Error: Could not find or load main class 3071_minimum_operations_to_write_letter_y
+Caused by: java.lang.ClassNotFoundException: 3071_minimum_operations_to_write_letter_y
+
+  Compiling: 3161_block_placement_queries.java
+  ✗ 3161_block_placement_queries.java - FAILED (exit code: 1)
+Error: Could not find or load main class 3161_block_placement_queries
+Caused by: java.lang.ClassNotFoundException: 3161_block_placement_queries
+
+  Compiling: 332_reconstruct_itinerary.java
+  ✗ 332_reconstruct_itinerary.java - FAILED (exit code: 1)
+Error: Could not find or load main class 332_reconstruct_itinerary
+Caused by: java.lang.ClassNotFoundException: 332_reconstruct_itinerary
+
+  Compiling: 54_spiral_matrix.java
+  ✗ 54_spiral_matrix.java - FAILED (exit code: 1)
+Error: Could not find or load main class 54_spiral_matrix
+Caused by: java.lang.ClassNotFoundException: 54_spiral_matrix
+
+  Compiling: 56_merge_intervals.java
+  ✗ 56_merge_intervals.java - FAILED (exit code: 1)
+Error: Could not find or load main class 56_merge_intervals
+Caused by: java.lang.ClassNotFoundException: 56_merge_intervals
+
+  Compiling: 68_text_justification.java
+  ✗ 68_text_justification.java - FAILED (exit code: 1)
+Error: Could not find or load main class 68_text_justification
+Caused by: java.lang.ClassNotFoundException: 68_text_justification
+
+  Compiling: 71_simplify_path.java
+  ✗ 71_simplify_path.java - FAILED (exit code: 1)
+Error: Could not find or load main class 71_simplify_path
+Caused by: java.lang.ClassNotFoundException: 71_simplify_path
+
+  Compiling: 723_candy_crush.java
+  ✗ 723_candy_crush.java - FAILED (exit code: 1)
+Error: Could not find or load main class 723_candy_crush
+Caused by: java.lang.ClassNotFoundException: 723_candy_crush
+
+  Compiling: 84_largest_rectangle_in_histogram.java
+  ✗ 84_largest_rectangle_in_histogram.java - FAILED (exit code: 1)
+Error: Could not find or load main class 84_largest_rectangle_in_histogram
+Caused by: java.lang.ClassNotFoundException: 84_largest_rectangle_in_histogram
+
+=== Test Summary ===
+Total tests: 41
+Passed: 0
+Failed: 41
+
+⚠️  Some tests failed
