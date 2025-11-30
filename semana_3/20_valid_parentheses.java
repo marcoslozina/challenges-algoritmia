@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 20 - Valid Parentheses
  * 
  * Link: https://leetcode.com/problems/valid-parentheses/
+ * Visual Explanation: https://neetcode.io/practice/valid-parentheses
+ * Video Solution: https://www.youtube.com/watch?v=WTzjTskDFMg
  * 
  * Problem Description:
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',

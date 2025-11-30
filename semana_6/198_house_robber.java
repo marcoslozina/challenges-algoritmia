@@ -2,6 +2,8 @@
  * LeetCode 198 - House Robber
  * 
  * Link: https://leetcode.com/problems/house-robber/
+ * Visual Explanation: https://neetcode.io/practice/house-robber
+ * Video Solution: https://www.youtube.com/watch?v=73r3KWiEvyk
  * 
  * Problem Description:
  * You are a professional robber planning to rob houses along a street. Each house has a certain

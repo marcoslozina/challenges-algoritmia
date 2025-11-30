@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 146 - LRU Cache
  * 
  * Link: https://leetcode.com/problems/lru-cache/
+ * Visual Explanation: https://neetcode.io/practice/lru-cache
+ * Video Solution: https://www.youtube.com/watch?v=7ABFKPK2hD4
  * 
  * Problem Description:
  * Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.

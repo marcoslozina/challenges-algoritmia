@@ -2,6 +2,8 @@
  * LeetCode 543 - Diameter of Binary Tree
  * 
  * Link: https://leetcode.com/problems/diameter-of-binary-tree/
+ * Visual Explanation: https://neetcode.io/practice/diameter-of-binary-tree
+ * Video Solution: https://www.youtube.com/watch?v=bkxqA8Rfv04
  * 
  * Problem Description:
  * Given the root of a binary tree, return the length of the diameter of the tree.

@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 217 - Contains Duplicate
  * 
  * Link: https://leetcode.com/problems/contains-duplicate/
+ * Visual Explanation: https://neetcode.io/practice/contains-duplicate
+ * Video Solution: https://www.youtube.com/watch?v=3OamzN90kPg
  * 
  * Problem Description:
  * Given an integer array nums, return true if any value appears at least twice in the array,

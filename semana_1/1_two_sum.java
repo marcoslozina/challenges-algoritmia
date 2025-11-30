@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 1 - Two Sum
  * 
  * Link: https://leetcode.com/problems/two-sum/
+ * Visual Explanation: https://neetcode.io/practice/two-sum
+ * Video Solution: https://www.youtube.com/watch?v=KLlXCFG5TnA
  * 
  * Problem Description:
  * Given an array of integers nums and an integer target, return indices of the two numbers

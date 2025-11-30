@@ -2,6 +2,7 @@
  * LeetCode 3034 - Number of Subarrays That Match a Pattern I
  * 
  * Link: https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/
+ * Visual Explanation: https://neetcode.io/practice
  * 
  * Problem Description:
  * You are given a 0-indexed integer array nums of length n, and a 0-indexed integer

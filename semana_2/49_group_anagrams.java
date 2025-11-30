@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 49 - Group Anagrams
  * 
  * Link: https://leetcode.com/problems/group-anagrams/
+ * Visual Explanation: https://neetcode.io/practice/group-anagrams
+ * Video Solution: https://www.youtube.com/watch?v=vzdNOK2oB2E
  * 
  * Problem Description:
  * Given an array of strings strs, group the anagrams together. You can return the answer in any order.

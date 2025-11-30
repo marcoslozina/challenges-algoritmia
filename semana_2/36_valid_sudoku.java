@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 36 - Valid Sudoku
  * 
  * Link: https://leetcode.com/problems/valid-sudoku/
+ * Visual Explanation: https://neetcode.io/practice/valid-sudoku
+ * Video Solution: https://www.youtube.com/watch?v=TjFXEUCMqI8
  * 
  * Problem Description:
  * Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated

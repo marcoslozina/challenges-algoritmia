@@ -4,6 +4,7 @@ import java.util.Arrays;
  * LeetCode 2672 - Number of Adjacent Elements With the Same Color
  * 
  * Link: https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/
+ * Visual Explanation: https://neetcode.io/practice
  * 
  * Problem Description:
  * There is a 0-indexed array nums of length n. Initially, all elements are uncolored

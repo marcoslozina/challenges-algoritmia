@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 232 - Implement Queue using Stacks
  * 
  * Link: https://leetcode.com/problems/implement-queue-using-stacks/
+ * Visual Explanation: https://neetcode.io/practice/implement-queue-using-stacks
+ * Video Solution: https://www.youtube.com/watch?v=Wg8IiY1LbII
  * 
  * Problem Description:
  * Implement a first in first out (FIFO) queue using only two stacks. The implemented queue

@@ -2,6 +2,8 @@
  * LeetCode 5 - Longest Palindromic Substring
  * 
  * Link: https://leetcode.com/problems/longest-palindromic-substring/
+ * Visual Explanation: https://neetcode.io/practice/longest-palindromic-substring
+ * Video Solution: https://www.youtube.com/watch?v=XYQecbcd6_c
  * 
  * Problem Description:
  * Given a string s, return the longest palindromic substring in s.

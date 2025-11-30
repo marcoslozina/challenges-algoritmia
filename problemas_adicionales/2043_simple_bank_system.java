@@ -2,6 +2,7 @@
  * LeetCode 2043 - Simple Bank System
  * 
  * Link: https://leetcode.com/problems/simple-bank-system/
+ * Visual Explanation: https://neetcode.io/practice
  * 
  * Problem Description:
  * You have been tasked with writing a program for a popular bank that will automate all

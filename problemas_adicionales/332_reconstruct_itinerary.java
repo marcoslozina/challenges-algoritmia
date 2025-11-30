@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 332 - Reconstruct Itinerary
  * 
  * Link: https://leetcode.com/problems/reconstruct-itinerary/
+ * Visual Explanation: https://neetcode.io/practice/reconstruct-itinerary
+ * Video Solution: https://www.youtube.com/watch?v=ZyB_gQ8vqGA
  * 
  * Problem Description:
  * You are given a list of airline tickets where tickets[i] = [fromi, toi] represent

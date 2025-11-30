@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 3 - Longest Substring Without Repeating Characters
  * 
  * Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * Visual Explanation: https://neetcode.io/practice/longest-substring-without-repeating-characters
+ * Video Solution: https://www.youtube.com/watch?v=wiGpQwVHdE0
  * 
  * Problem Description:
  * Given a string s, find the length of the longest substring without repeating characters.

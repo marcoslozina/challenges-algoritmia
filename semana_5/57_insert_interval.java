@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 57 - Insert Interval
  * 
  * Link: https://leetcode.com/problems/insert-interval/
+ * Visual Explanation: https://neetcode.io/practice/insert-interval
+ * Video Solution: https://www.youtube.com/watch?v=A8NUOmlwOlM
  * 
  * Problem Description:
  * You are given an array of non-overlapping intervals intervals where intervals[i] = [starti, endi]

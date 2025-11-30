@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 76 - Minimum Window Substring
  * 
  * Link: https://leetcode.com/problems/minimum-window-substring/
+ * Visual Explanation: https://neetcode.io/practice/minimum-window-substring
+ * Video Solution: https://www.youtube.com/watch?v=jSto0O4AJbM
  * 
  * Problem Description:
  * Given two strings s and t of lengths m and n respectively, return the minimum window substring

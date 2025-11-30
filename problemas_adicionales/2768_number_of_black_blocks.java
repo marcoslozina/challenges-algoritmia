@@ -4,6 +4,7 @@ import java.util.*;
  * LeetCode 2768 - Number of Black Blocks
  * 
  * Link: https://leetcode.com/problems/number-of-black-blocks/
+ * Visual Explanation: https://neetcode.io/practice
  * 
  * Problem Description:
  * You are given two integers m and n representing the dimensions of a floor plan of a

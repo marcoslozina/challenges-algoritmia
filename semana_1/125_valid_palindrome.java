@@ -2,6 +2,8 @@
  * LeetCode 125 - Valid Palindrome
  * 
  * Link: https://leetcode.com/problems/valid-palindrome/
+ * Visual Explanation: https://neetcode.io/practice/valid-palindrome
+ * Video Solution: https://www.youtube.com/watch?v=jJXJ16kPFWg
  * 
  * Problem Description:
  * A phrase is a palindrome if, after converting all uppercase letters into lowercase letters

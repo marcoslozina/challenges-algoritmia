@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 202 - Happy Number
  * 
  * Link: https://leetcode.com/problems/happy-number/
+ * Visual Explanation: https://neetcode.io/practice/happy-number
+ * Video Solution: https://www.youtube.com/watch?v=ljz85bxOYJ0
  * 
  * Problem Description:
  * Write an algorithm to determine if a number n is happy.

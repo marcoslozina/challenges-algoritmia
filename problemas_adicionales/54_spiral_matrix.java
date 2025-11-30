@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 54 - Spiral Matrix
  * 
  * Link: https://leetcode.com/problems/spiral-matrix/
+ * Visual Explanation: https://neetcode.io/practice/spiral-matrix
+ * Video Solution: https://www.youtube.com/watch?v=BJnMZNwUk1M
  * 
  * Problem Description:
  * Given an m x n matrix, return all elements of the matrix in spiral order.

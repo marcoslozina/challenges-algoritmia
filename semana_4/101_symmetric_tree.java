@@ -2,6 +2,8 @@
  * LeetCode 101 - Symmetric Tree
  * 
  * Link: https://leetcode.com/problems/symmetric-tree/
+ * Visual Explanation: https://neetcode.io/practice/symmetric-tree
+ * Video Solution: https://www.youtube.com/watch?v=Mao9uzxwvmc
  * 
  * Problem Description:
  * Given the root of a binary tree, check whether it is a mirror of itself

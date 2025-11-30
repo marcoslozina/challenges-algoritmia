@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 242 - Valid Anagram
  * 
  * Link: https://leetcode.com/problems/valid-anagram/
+ * Visual Explanation: https://neetcode.io/practice/valid-anagram
+ * Video Solution: https://www.youtube.com/watch?v=9UtInBqnCgA
  * 
  * Problem Description:
  * Given two strings s and t, return true if t is an anagram of s, and false otherwise.

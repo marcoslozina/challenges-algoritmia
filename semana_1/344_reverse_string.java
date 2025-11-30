@@ -2,6 +2,8 @@
  * LeetCode 344 - Reverse String
  * 
  * Link: https://leetcode.com/problems/reverse-string/
+ * Visual Explanation: https://neetcode.io/practice/reverse-string
+ * Video Solution: https://www.youtube.com/watch?v=5keU0tNjbcY
  * 
  * Problem Description:
  * Write a function that reverses a string. The input string is given as an array of characters s.

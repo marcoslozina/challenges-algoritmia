@@ -2,6 +2,8 @@
  * LeetCode 226 - Invert Binary Tree
  * 
  * Link: https://leetcode.com/problems/invert-binary-tree/
+ * Visual Explanation: https://neetcode.io/practice/invert-binary-tree
+ * Video Solution: https://www.youtube.com/watch?v=OnSn2XOD4k4
  * 
  * Problem Description:
  * Given the root of a binary tree, invert the tree, and return its root.

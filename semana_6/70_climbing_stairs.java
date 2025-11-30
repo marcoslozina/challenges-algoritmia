@@ -2,6 +2,8 @@
  * LeetCode 70 - Climbing Stairs
  * 
  * Link: https://leetcode.com/problems/climbing-stairs/
+ * Visual Explanation: https://neetcode.io/practice/climbing-stairs
+ * Video Solution: https://www.youtube.com/watch?v=Y0lT9Fck7qI
  * 
  * Problem Description:
  * You are climbing a staircase. It takes n steps to reach the top.

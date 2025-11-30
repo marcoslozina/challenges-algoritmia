@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 205 - Isomorphic Strings
  * 
  * Link: https://leetcode.com/problems/isomorphic-strings/
+ * Visual Explanation: https://neetcode.io/practice/isomorphic-strings
+ * Video Solution: https://www.youtube.com/watch?v=7yF-U1h2q9I
  * 
  * Problem Description:
  * Given two strings s and t, determine if they are isomorphic.

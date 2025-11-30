@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 56 - Merge Intervals
  * 
  * Link: https://leetcode.com/problems/merge-intervals/
+ * Visual Explanation: https://neetcode.io/practice/merge-intervals
+ * Video Solution: https://www.youtube.com/watch?v=44H3cEC2fFM
  * 
  * Problem Description:
  * Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping

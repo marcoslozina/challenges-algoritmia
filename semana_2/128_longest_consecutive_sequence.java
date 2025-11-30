@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 128 - Longest Consecutive Sequence
  * 
  * Link: https://leetcode.com/problems/longest-consecutive-sequence/
+ * Visual Explanation: https://neetcode.io/practice/longest-consecutive-sequence
+ * Video Solution: https://www.youtube.com/watch?v=P6RZZMu_maU
  * 
  * Problem Description:
  * Given an unsorted array of integers nums, return the length of the longest consecutive

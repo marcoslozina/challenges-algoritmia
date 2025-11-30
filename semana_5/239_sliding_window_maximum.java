@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 239 - Sliding Window Maximum
  * 
  * Link: https://leetcode.com/problems/sliding-window-maximum/
+ * Visual Explanation: https://neetcode.io/practice/sliding-window-maximum
+ * Video Solution: https://www.youtube.com/watch?v=DfljaUwZsOk
  * 
  * Problem Description:
  * You are given an array of integers nums, there is a sliding window of size k which is moving

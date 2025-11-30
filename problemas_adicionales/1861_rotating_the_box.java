@@ -2,6 +2,7 @@
  * LeetCode 1861 - Rotating the Box
  * 
  * Link: https://leetcode.com/problems/rotating-the-box/
+ * Visual Explanation: https://neetcode.io/practice
  * 
  * Problem Description:
  * You are given an m x n matrix of characters box representing a side-view of a box.

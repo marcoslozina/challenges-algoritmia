@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 84 - Largest Rectangle in Histogram
  * 
  * Link: https://leetcode.com/problems/largest-rectangle-in-histogram/
+ * Visual Explanation: https://neetcode.io/practice/largest-rectangle-in-histogram
+ * Video Solution: https://www.youtube.com/watch?v=zx5Sw9130L0
  * 
  * Problem Description:
  * Given an array of integers heights representing the histogram's bar height where the

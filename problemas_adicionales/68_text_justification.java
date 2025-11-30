@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 68 - Text Justification
  * 
  * Link: https://leetcode.com/problems/text-justification/
+ * Visual Explanation: https://neetcode.io/practice/text-justification
+ * Video Solution: https://www.youtube.com/watch?v=GqXlEbFVTXY
  * 
  * Problem Description:
  * Given an array of strings words and a width maxWidth, format the text such that each

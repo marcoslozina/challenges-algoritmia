@@ -4,6 +4,7 @@ import java.util.*;
  * LeetCode 3161 - Block Placement Queries
  * 
  * Link: https://leetcode.com/problems/block-placement-queries/
+ * Visual Explanation: https://neetcode.io/practice
  * 
  * Problem Description:
  * You are given an array queries where queries[i] = [typei, sizei, indexi].

@@ -4,6 +4,7 @@ import java.util.*;
  * LeetCode 3071 - Minimum Operations to Write the Letter Y on a Grid
  * 
  * Link: https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/
+ * Visual Explanation: https://neetcode.io/practice
  * 
  * Problem Description:
  * You are given a 0-indexed n x n grid where each cell contains a value 0, 1, or 2.

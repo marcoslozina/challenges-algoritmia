@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 322 - Coin Change
  * 
  * Link: https://leetcode.com/problems/coin-change/
+ * Visual Explanation: https://neetcode.io/practice/coin-change
+ * Video Solution: https://www.youtube.com/watch?v=H9bfqozjoqs
  * 
  * Problem Description:
  * You are given an integer array coins representing coins of different denominations and an

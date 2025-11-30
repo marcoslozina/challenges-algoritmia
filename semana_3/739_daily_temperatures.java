@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 739 - Daily Temperatures
  * 
  * Link: https://leetcode.com/problems/daily-temperatures/
+ * Visual Explanation: https://neetcode.io/practice/daily-temperatures
+ * Video Solution: https://www.youtube.com/watch?v=cTBiBSnjO3c
  * 
  * Problem Description:
  * Given an array of integers temperatures represents the daily temperatures, return an array

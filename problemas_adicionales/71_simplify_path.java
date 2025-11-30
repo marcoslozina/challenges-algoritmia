@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 71 - Simplify Path
  * 
  * Link: https://leetcode.com/problems/simplify-path/
+ * Visual Explanation: https://neetcode.io/practice/simplify-path
+ * Video Solution: https://www.youtube.com/watch?v=9cWmpsF6t3Y
  * 
  * Problem Description:
  * Given a string path, which is an absolute path (starting with a '/') to a file or

@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 150 - Evaluate Reverse Polish Notation
  * 
  * Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/
+ * Visual Explanation: https://neetcode.io/practice/evaluate-reverse-polish-notation
+ * Video Solution: https://www.youtube.com/watch?v=iu0082c4HDE
  * 
  * Problem Description:
  * You are given an array of strings tokens that represents an arithmetic expression

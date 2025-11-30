@@ -4,6 +4,8 @@ import java.util.*;
  * LeetCode 347 - Top K Frequent Elements
  * 
  * Link: https://leetcode.com/problems/top-k-frequent-elements/
+ * Visual Explanation: https://neetcode.io/practice/top-k-frequent-elements
+ * Video Solution: https://www.youtube.com/watch?v=YPTqKIgVk-k
  * 
  * Problem Description:
  * Given an integer array nums and an integer k, return the k most frequent elements.

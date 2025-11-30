@@ -2,6 +2,8 @@
  * LeetCode 53 - Maximum Subarray (Kadane's Algorithm)
  * 
  * Link: https://leetcode.com/problems/maximum-subarray/
+ * Visual Explanation: https://neetcode.io/practice/maximum-subarray
+ * Video Solution: https://www.youtube.com/watch?v=5WZl3MMT0Eg
  * 
  * Problem Description:
  * Given an integer array nums, find the contiguous subarray (containing at least one number)

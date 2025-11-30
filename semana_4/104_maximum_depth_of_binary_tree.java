@@ -2,6 +2,8 @@
  * LeetCode 104 - Maximum Depth of Binary Tree
  * 
  * Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * Visual Explanation: https://neetcode.io/practice/maximum-depth-of-binary-tree
+ * Video Solution: https://www.youtube.com/watch?v=hTM3phVI6YQ
  * 
  * Problem Description:
  * Given the root of a binary tree, return its maximum depth.
