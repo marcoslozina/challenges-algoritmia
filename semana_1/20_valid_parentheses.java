@@ -8,7 +8,7 @@ import java.util.*;
  * Video Solution: https://www.youtube.com/watch?v=WTzjTskDFMg
  * 
  * Problem Description:
- * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+ * Given a string s containing just the characters 'z(', ')', '{', '}', '[' and ']',
  * determine if the input string is valid.
  * 
  * An input string is valid if:

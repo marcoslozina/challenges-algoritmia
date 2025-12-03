@@ -48,6 +48,7 @@ Each problem file includes:
 | [202 - Happy Number](semana_2/202_happy_number.java) | ✅ Completed | Cycle Detection with Set | `semana_2/202_happy_number.java` |
 | [205 - Isomorphic Strings](semana_2/205_isomorphic_strings.java) | ✅ Completed | HashMap + Bi-mapping | `semana_2/205_isomorphic_strings.java` |
 | [128 - Longest Consecutive Sequence](semana_2/128_longest_consecutive_sequence.java) | ✅ Completed | Set + Optimization | `semana_2/128_longest_consecutive_sequence.java` |
+| [1636 - Sort Array by Increasing Frequency](semana_2/1636_sort_array_by_increasing_frequency.java) | ✅ Completed | HashMap + Sorting | `semana_2/1636_sort_array_by_increasing_frequency.java` |
 
 ### ✅ Week 3: Stacks and Queues
 **Objective:** Learn LIFO/FIFO structures for sequential problems.
@@ -113,7 +114,7 @@ Each problem file includes:
 | [68 - Text Justification](problemas_adicionales/68_text_justification.java) | ✅ Completed | String Formatting | `problemas_adicionales/68_text_justification.java` |
 | [332 - Reconstruct Itinerary](problemas_adicionales/332_reconstruct_itinerary.java) | ✅ Completed | Graph DFS | `problemas_adicionales/332_reconstruct_itinerary.java` |
 
-**Total: 49 problems solved**
+**Total: 50 problems solved**
 
 ## 🚀 Execution
 
