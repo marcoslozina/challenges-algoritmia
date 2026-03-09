@@ -51,6 +51,12 @@ Sliding Window
 
 Prefix Sum
 
+---
+💡 **Resumen de Sección (Array)**
+- **Patrón principal:** Secuencias estáticas, Punteros múltiples (Two Pointers), Ventana Deslizante (Sliding Window).
+- **Idea Clave:** Estructura de memoria contigua y tamaño fijo. Es la base de algoritmos que requieren acceso rápido por índice en O(1).
+- **Cómo resolverlo con Java:** Si conoces el tamaño exacto usa `new int[N]`. Utiliza el `for(int i)` tradicional cuando necesites manipular los índices o compararlos, o `for(int n : arr)` si solo vas a leer. Usa punteros lógicos (variables tipo `left`, `right`) para recorrer desde extremos.
+
 2️⃣ Matriz (int[][])
 📌 Cuándo usar
 
@@ -80,6 +86,12 @@ Flood Fill
 
 Rotting Oranges
 
+---
+💡 **Resumen de Sección (Matriz)**
+- **Patrón principal:** Grillas (Grid), Búsqueda en grafos implícitos (BFS/DFS).
+- **Idea Clave:** Representación 2D donde cada celda se ubica con `[fila][columna]`. Es vital validar siempre que no salgas de los límites `(fila >= 0 && fila < filas.length)`.
+- **Cómo resolverlo con Java:** Itera con doble `for` anidado. Para simular movimientos ortogonales (arriba, abajo, izq, der) usa un array de desplazamientos `int[][] dirs = {{1,0}, {-1,0}, {0,1}, {0,-1}}` y calcula tu nueva posición sumándolo a la actual `nr = r + dir[0]`.
+
 3️⃣ ArrayList<T>
 📌 Cuándo usar
 
@@ -107,6 +119,12 @@ Group Anagrams
 Subsets
 
 Permutations
+
+---
+💡 **Resumen de Sección (ArrayList)**
+- **Patrón principal:** Colecciones dinámicas, Agrupamiento de resultados, Backtracking.
+- **Idea Clave:** Es un arreglo subyacente que crece dinámicamente. Ideal cuando no sabes cuántos elementos guardarás antes de empezar.
+- **Cómo resolverlo con Java:** Instancialo indicando el genérico `new ArrayList<>()`. Para Backtracking, agregas el elemento `list.add(x)`, haces el llamado recursivo, y luego lo remueves `list.remove(list.size() - 1)` para deshacer la decisión y probar el siguiente camino.
 
 4️⃣ HashMap<K, V>
 📌 Cuándo usar
@@ -143,6 +161,12 @@ Isomorphic Strings
 
 Frequency Count
 
+---
+💡 **Resumen de Sección (HashMap)**
+- **Patrón principal:** Agrupaciones, Conteo de Frecuencias, Detección y emparejamiento usando complementos (ej: Two Sum).
+- **Idea Clave:** Estructura superpoderosa para buscar, insertar y borrar en tiempo O(1). Relaciona pares de `Clave -> Valor`.
+- **Cómo resolverlo con Java:** Para contadores, el patrón estrella es `map.put(key, map.getOrDefault(key, 0) + 1)`. Para agrupar listas o conjuntos en un valor, usa el método moderno: `map.computeIfAbsent(key, k -> new ArrayList<>()).add(val)`.
+
 5️⃣ HashSet<T>
 📌 Cuándo usar
 
@@ -166,6 +190,12 @@ Longest Consecutive Sequence
 
 Detect Cycle
 
+---
+💡 **Resumen de Sección (HashSet)**
+- **Patrón principal:** Existencia ultrarrápida (O(1)), Eliminación de duplicados, Detección de ciclos.
+- **Idea Clave:** Garantiza que no existan repetidos y responde si un elemento ya fue procesado / visitado instantáneamente.
+- **Cómo resolverlo con Java:** Usa `set.add(x)` para insertar (revisa el valor de retorno porque devuelve `false` si ya existía). Úsalo fundamentalmente como un registro de elementos `visitados` para no entrar en ciclos infinitos en problemas de grafos o el "Happy Number".
+
 6️⃣ String
 📌 Cuándo usar
 
@@ -186,6 +216,12 @@ s.equals(other)
 s.equals(t)     // SIEMPRE
 s == t          // ❌ NO
 
+---
+💡 **Resumen de Sección (String)**
+- **Patrón principal:** Procesamiento de texto, Palíndromos, Anagramas, Ventanas Deslizantes.
+- **Idea Clave:** En Java, los `String` son INMUTABLES. Cada concatenación (+) produce un nuevo objeto, lo que arriesga sobrecosto exponencial. Usar `StringBuilder` si debes modificar o armar textos en bucles.
+- **Cómo resolverlo con Java:** Para evitar costos, no intentes modificar caracteres in-place, convierte en un arreglo manipulable con `s.toCharArray()`. O itera validando con `s.charAt(i)`. SIEMPRE compara contenido de textos utilizando `s.equals(other)`.
+
 7️⃣ char
 📌 Cuándo usar
 
@@ -199,6 +235,12 @@ c - 'a'        // índice 0–25
 Character.isDigit(c)
 Character.isLetter(c)
 
+---
+💡 **Resumen de Sección (char)**
+- **Patrón principal:** Mapeo a índices (Frequency Array / ASCII), Validaciones específicas de texto clásico.
+- **Idea Clave:** Secretamente un `char` es tratado numéricamente como su valor de código ASCII. Por tanto, puedes hacer sumas y restas sobre ellos para calcular desfases lógicos.
+- **Cómo resolverlo con Java:** Para arreglos de frecuencia contigua, calcula el índice normalizado restándole el primer carácter del abecedario: `int index = c - 'a'`. Usa comodidades nativas como `Character.isDigit()` para filtrar caracteres no permitidos rápidamente.
+
 8️⃣ int (trucos frecuentes)
 🔢 Dígitos
 digit = n % 10
@@ -208,6 +250,12 @@ n = n / 10
 Math.max(a, b)
 Math.min(a, b)
 Math.abs(x)
+
+---
+💡 **Resumen de Sección (int)**
+- **Patrón principal:** Manipulación de dígitos, Matemática con bases (potencias/absolutos), Evitar desbordamiento (Overflow).
+- **Idea Clave:** Comprender el peso de la base 10: el módulo `% 10` desprende el último dígito, la división entera `/ 10` remueve dicho último dígito.
+- **Cómo resolverlo con Java:** Usa bucles iterativos `while (n > 0)` procesando porciones de a divisores. Para números muy enormes que pasen el límite de `Integer.MAX_VALUE` castéalos o defínelos preventivamente como `long`.
 
 🔁 Patrones que se REPITEN (memorizá esto)
 Patrón	Estructuras
