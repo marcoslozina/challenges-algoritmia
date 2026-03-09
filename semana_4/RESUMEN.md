@@ -2,7 +2,7 @@
 
 ## 📌 Estructuras y Patrones
 
-### 1️⃣ DFS Recursivo (`Depth-First Search`)
+### 1️⃣ Depth-First Search (DFS) Recursivo
 - **Patrón principal:** Búsqueda y análisis sobre Nodos en Árboles Binarios, Invertir Árboles, Calcular Profundidades Máximas, Encontrar Ancestros Comunes.
 - **Idea Clave:** Confía en que la llamada recursiva (hacia los hijos de izquierda a derecha) te traerá la información que le pidas. Trata de resolver el subproblema actual y pasar el resultado hacia `root`.
 - **Cómo resolverlo con Java:** Construyes una función `dfs(TreeNode node)`. Su paso fundamental es manejar el NULO: `if (node == null) return ...;`. Y posteriormente llamas a `dfs(node.left)` y `dfs(node.right)`.
