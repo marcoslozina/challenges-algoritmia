@@ -1,2 +1,13 @@
+# Compiled Java
 *.class
-.class
+
+# IDE — IntelliJ IDEA
+.idea/
+*.iml
+
+# Generated output
+test_results.txt
+
+# OS
+.DS_Store
+Thumbs.db
