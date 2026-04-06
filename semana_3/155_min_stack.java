@@ -8,7 +8,8 @@ import java.util.*;
  * Video Solution: https://www.youtube.com/watch?v=qkLl7nAwDPo
  * 
  * Problem Description:
- * Design a stack that supports push, pop, top, and retrieving the minimum element in constant O(1) time.
+ * Design a stack that supports push, pop, top, and retrieving the minimum
+ * element in constant O(1) time.
  * 
  * Implement the MinStack class:
  * - MinStack() initializes the stack object
@@ -21,9 +22,9 @@ import java.util.*;
  * We use two stacks:
  * 1. Main stack to store all values
  * 2. Min stack that maintains the current minimum at each level
- *    - On push, compare with current minimum and add the smaller one
- *    - On pop, remove from both stacks
- *    - getMin() returns the top of the min stack
+ * - On push, compare with current minimum and add the smaller one
+ * - On pop, remove from both stacks
+ * - getMin() returns the top of the min stack
  * 
  * Time Complexity: O(1) for all operations
  * Space Complexity: O(n)
@@ -31,38 +32,39 @@ import java.util.*;
 class MinStack {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;
-    
+
     public MinStack() {
         stack = new Stack<>();
         minStack = new Stack<>();
     }
-    
+
     public void push(int val) {
         stack.push(val);
-        if (minStack.isEmpty() || val <= minStack.peek()) {
+        if (minStack.isEmpty() || val <= minStack.peek()) { // si es el primer elemento o el mas chico lo guardo
             minStack.push(val);
         } else {
-            minStack.push(minStack.peek());
+            minStack.push(minStack.peek()); // aca la magia es que voy repitiendo el minimo de cada elemanteo hasta
+                                            // encontrar uno mas minimo
         }
     }
-    
+
     public void pop() {
         stack.pop();
         minStack.pop();
     }
-    
-    public int top() {
+
+    public int top() { // aca es peek y no pop porque ncesito VER y no SACAR
         return stack.peek();
     }
-    
-    public int getMin() {
+
+    public int getMin() { // aca es peek y no pop porque ncesito VER y no SACAR
         return minStack.peek();
     }
-    
+
     // Test unitarios
     public static void main(String[] args) {
         System.out.println("=== Test 155 - Min Stack ===");
-        
+
         MinStack minStack = new MinStack();
         minStack.push(-2);
         minStack.push(0);
@@ -72,8 +74,7 @@ class MinStack {
         assert minStack.top() == 0 : "Test 1.2 failed";
         assert minStack.getMin() == -2 : "Test 1.3 failed";
         System.out.println("✓ Test 1 passed");
-        
+
         System.out.println("Todos los tests pasaron! ✓");
     }
 }
-
